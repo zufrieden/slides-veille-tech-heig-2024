@@ -11,7 +11,14 @@
   font-style: normal;
   font-display: fallback;
   font-weight: 1 999;
-  src: local("Work-Sans"), url("dist/theme/fonts/WorkSans[wght].ttf") format("truetype-variations");
+  src: local("Work-Sans"), url("fonts/WorkSans[wght].ttf") format("truetype-variations");
+}
+@font-face {
+  font-family: "Departure";
+  font-style: normal;
+  font-display: fallback;
+  font-weight: 400;
+  src: local("Departure Mono"), url("fonts/DepartureMono-Regular.woff") format("woff");
 }
 /*
 --bg-color: hsla(202, 85%, 4%, 1);
@@ -42,7 +49,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: none;
   --r-heading-text-shadow: none;
-  --r-heading-font-weight: 800;
+  --r-heading-font-weight: 600;
   --r-heading1-text-shadow: none;
   --r-heading1-size: 3.77em;
   --r-heading2-size: 2.11em;
@@ -398,6 +405,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .step-name {
   font-size: 0.4em;
+  font-family: "Departure";
 }
 
 mark {

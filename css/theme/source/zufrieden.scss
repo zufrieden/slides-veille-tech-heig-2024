@@ -22,7 +22,14 @@
   font-style: normal;
   font-display: fallback;
   font-weight: 1 999;
-  src: local('Work-Sans'), url('dist/theme/fonts/WorkSans[wght].ttf') format("truetype-variations");
+  src: local('Work-Sans'), url('fonts/WorkSans[wght].ttf') format("truetype-variations");
+}
+@font-face {
+  font-family: 'Departure';
+  font-style: normal;
+  font-display: fallback;
+  font-weight: 400;
+  src: local('Departure Mono'), url('fonts/DepartureMono-Regular.woff') format("woff");
 }
 
 
@@ -31,7 +38,7 @@ $mainFont: 'work sans',-apple-system,BlinkMacSystemFont,avenir next,avenir,helve
 $mainColor:#f6edf8;
 $headingFont: $mainFont;
 $headingColor:#f6edf8;
-$headingFontWeight: 800;
+$headingFontWeight: 600;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor:#1b0425;
@@ -76,7 +83,7 @@ $selectionBackgroundColor:#f6edf8;
     }
 }
 .step-icon{ font-size: 2em; }
-.step-name{ font-size: 0.4em; }
+.step-name{ font-size: 0.4em; font-family: 'Departure'}
 
 mark{
   background-color: $linkColor;
