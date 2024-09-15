@@ -1,0 +1,3860 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Veille technologique - HEIG-VD - COMEM - Marc Friederich</title>
+		<meta name="description" content="Contenu du module Laboratoire Veille Technologique - donné par Marc Friederich dans le cadre de la formation COMEM à la HEIG-VD">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/zufrieden.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="css/monokai.css">		
+	</head>
+	<body>
+		<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+		  <defs>
+			<filter id="marker-shape">
+			  <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+			  <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+			</filter>
+		  </defs>
+		</svg>
+		<div class="reveal">
+			<div class="slides">
+				<!-- # Cover -->
+				<section>
+					<h1>Laboratoire<span style="font-size:0.6em;">🧪</span></h1> </marquee>
+					<marquee scrollamount="20"><h3>Veille technologique — Veille technologique — Veille technologique</h3></marquee>
+					<p>M51 – HEIG-VD - COMEM</p>
+					<p>⛄️ Marc Friederich</p>
+				</section>
+				
+				<!-- ## Disclaimer -->
+				<section data-background-color="#b300f9">
+					<h1>Disclaimer</h1>
+					<aside class="notes">
+						<ul>	
+							<li>Participation active required</li>
+							<li>Ce sera technique mais aussi un peu philosophique</li>
+							<li>mais j'ai surtout envie de vous questionner sur votre chemin de carrière</li>
+							<li>Profitez de mon "inexpérience" d'enseignant, et de mon "expérience" de professionnel.</li>
+							<li>C'est un cours que j'aurai aimé avoir durant ma formation Comem</li>
+						</ul>
+					</aside>
+				</section>
+				
+				<!-- ## Introduction (définition et contexte) -->
+				<section>
+					<section>
+						<h1>Bonjour 👋</h1>
+					</section>
+					<section>
+						<h2>Marc Friederich ☃️</h2>
+						<h3 class="fragment">🥰 web</h3>
+						<aside class="notes">
+							<h3 class="fragment">simple, accessible, resilient, fast, distributed, diverse, empowering, open, evolving and playful.</h3>
+							Je m'appelle Marc...<br/>
+							J'ai publié mon premier site en 1997<br/>
+							Ça fait 25 ans .... lol<br/>
+							Je continue à être amoureux du web
+							<p style="color:red;">@push Pourquoi j'aime autant le web - https://zufrieden.io/writing/a-love-letter-to-the-web/</p>
+						</aside>
+					</section>
+					
+					<section>
+						<h2>La veille technologique&nbsp;?</h2>
+						<aside class="notes">
+							Organiser sa formation continue, se tenir au courant des prochaines tendances et anticiper les grands changements dans votre domaine de prédilection.	
+						</aside>
+					</section>
+					<section data-background-image="src/weforum_top_10_skills_2025.jpeg" 
+					  data-background-size="contain" data-background-color="#fff">
+					  	<img src="src/veille_top_skills_wef_2023.jpeg" alt="" class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px  rgba(0,0,0,1); border:10px solid white;">
+					  	<img src="src/weforum_top_10_skills_2020_2015.png" alt="" class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px  rgba(0,0,0,1); border:10px solid white;position: absolute;left:0;right:0;">
+						  <img src="src/manager_vs_leader.jpg" alt="" class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px  rgba(0,0,0,1); border:10px solid white;position: absolute;left:0;right:0;">
+						<aside class="notes">
+							<p>
+								dans les 10 compétences importantes pour 2025 selon le World Economic Forum en 2020 - Vous avez <strong>Innovation</strong>, <strong>active learning</strong> et <strong>learning strategies</strong>
+							</p>
+							<p>Technology design and programming disparait entre 2020 et 2023 :-( </p>
+							<p>A noter que ça a bien changé !</p>
+							<p>Ce n'était pas une compétence dans les top 10 en 2015 et 2020</p>
+							<p>Et on a remplacé People Management par leadership !?!</p>
+							<p>Vous connaissez la différence entre un leader et un manager ?</p>
+							<p>Le leader demande quoi, et pourquoi. Le manager comment et quand</p>
+							<p>Vous n'allez pas vous en rappeler. Alors que si je vous montre cette image ça va vous aider à vous souvenir de la différence</p>
+							<p>
+								<small>
+									<a href="https://www.weforum.org/agenda/2016/01/the-10-skills-you-need-to-thrive-in-the-fourth-industrial-revolution/">
+										https://www.weforum.org/agenda/2016/01/the-10-skills-you-need-to-thrive-in-the-fourth-industrial-revolution/
+									</a>
+								</small>
+							</p>
+							<p>
+								<small>
+									<a href="https://www.weforum.org/agenda/2020/10/top-10-work-skills-of-tomorrow-how-long-it-takes-to-learn-them/">
+										https://www.weforum.org/agenda/2020/10/top-10-work-skills-of-tomorrow-how-long-it-takes-to-learn-them/
+										</a>
+								</small>
+							</p>
+							<p>
+								<small>
+									<a href="https://www.proschoolonline.com/blog/managers-vs-leaders">https://www.proschoolonline.com/blog/managers-vs-leaders</a>
+								</small>
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Pourquoi un laboratoire&nbsp;?</h2>
+						<aside class="notes">
+							<ul>
+								<li>Vous avez déjà eu un cours sur le suivi des évolutions technologique</li>
+								<li>Vous avez eu ou aurez un cours sur la gestion des connaissances Knowledge management</li>
+								<li>À priori, la théorie - vous l'avez déjà acquise : L'objectif est une mise en pratique</li>
+								<li>Mettre en place votre système, qu'il vous suive un bon moment</li>
+								<li>À noter que, pour que ça fonctionne, il faut que vous sachiez un peu clairement ce que vous voulez faire ! </li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Motivation personnelle</h2>
+						<aside class="notes">
+							<p>Pourquoi j'ai eu envie de vous proposer ce talk ?</p>
+							<ol>
+								<li>La veille est un élément essentiel de nos métiers, du web mais pas seulement. C'est d'ailleurs pour moi une de ses plus grande richesse !</li>
+								<li>Je le vois dans les personnes que l'on recrute chez Antistatique, dans le marché romand en général</li>
+								<li>Je crois avoir passablement appris et expérimenté sur le sujet, pour me sentir un peu légitime de vous en parler </li>
+								<li>Entre conférences, meetups etc ... (participation, présentation, organisation)</li>
+							</ol>				
+							<p>
+								<em>Comme à chaque intervention dans les formations des métiers des médias (surtout les généralistes multimedia/mediamaticiens/ingénieur des medias).</em> J'en profite pour vous sensibiliser sur la nécessiter de trouver votre voie<br/>
+								-> qqun se souvient de Ikigai ? qui l'a mis à jour ?
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Comprendre ma relation à mon métier</h2>
+						<aside class="notes">
+							<p>Cette formation est une chance, en même temps une malédiction. Vous serez confronté au dilemme du Spécialiste/Généraliste. Dans tous les cas, vous devrez à un moment aiguiser une compétence. Vous allez découvrir que la largeur de vos compétences s'avère un atout.</p>
+							<p>Mon chemin est un des chemin possible en passant par votre formation. Il y en a plein d'autres.</p>
+							<p>Un peu de mon background.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>
+						 💾 1998 > 2001 > 2003
+						</h2>
+						<aside class="notes">	
+							<ul>
+								<li>
+									1998 > premier site internet
+									Début de la passion pour ce média			
+								</li>
+								<li>
+									2001 > webmaster du site de l'entreprise de Taxi, boulangerie, quincaillerie, paroisse du village 
+									Début de l'apprentissage		
+								</li>
+								<li> 
+									2003 > En parallèle du CFC, création de Antistatique (société simple) avec 2 copains de classe		
+								</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background-image="src/veille_photo_comem_2005.jpeg" 
+					  data-background-size="cover" data-background-color="#000" data-background-opacity="0.5">
+						<h2>Comem+ 34</h2>
+						<p>2005</p>
+					</section>
+					<section data-background-image="src/veille_photo_evtek_2006.jpeg" 
+					  data-background-size="cover" data-background-color="#000">
+						<h2>Evtek Finland</h2>
+						<p>2006</p>
+					</section>
+					<section data-background-image="src/veille_photo_antistatique_2008.jpeg" 
+					  data-background-size="cover" data-background-color="#000" data-background-opacity="0.5">
+						  <h2>Antistatique</h2>
+						<p>2008</p>
+						<aside class="notes">							
+						2008-2020 – Fondation de Antistatique
+						
+						started with :
+						3 fondateurs (Alberto, Gilles et Marc)
+						50 projets dans le portfolio, 40 clients
+						
+						Now :
+						12 ans
+						21 collaborateurs
+						4 associés
+						3000 projets 
+						</aside>
+					</section>
+					<section data-background-image="https://zufrieden.io/images/2018_performanceweb.jpg" 
+					  data-background-size="cover" data-background-color="#000" data-background-opacity="0.5">
+						<h2>Participation aux conférences</h2>
+						<aside class="notes">
+							Meetup, conférences. D'abord comme participant puis ensuite comme speaker
+						</aside>
+					</section>
+					<section data-background-image="src/veille_photo_interaction18.jpg" 
+					  data-background-size="cover" data-background-color="#000" data-background-opacity="0.5">
+						<h2>Organisation de conférences</h2>
+						<aside class="notes">
+							En 2018, dans la core-team organisateur de Interaction18 à Lyon. Conférence internationale qui réunit les designers d'interaction.
+						</aside>
+					</section>		
+				
+				</section>
+				
+				<!-- ## Objectifs et fonctionnement du laboratoire -->
+				<section>	
+					<section>
+						<h2>🧪 L'objectif du lab</h2>
+					<ul>
+						<li class="fragment fade-up">Importance de la veille</li>
+						<li class="fragment fade-up">Prendre du recule sur votre profession</li>
+						<li class="fragment fade-up">Mécanismes de la gestion des connaissances</li>
+						<li class="fragment fade-up">Trouver <strong>votre système</strong></li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Vous faire prendre conscience de l'importance de la veille pour votre parcours professionnel</li>
+							<li>Recule sur la profession des médias, la transformation digitale et les technologies de l'information. Vous faire prendre conscience des effets du temps qui passe</li>
+							<li>Comprendre les mécanismes de la veille et de la gestion des connaissances personnelles</li>
+							<li>Vous aider à trouver votre système</li>
+						</ul>
+					</aside>
+					</section>
+					<section>
+					<h2>Comment</h2>
+						<ol class="steps">
+							<li class="fragment fade-up">
+								<span class="step-icon">🎲</span>
+								<strong class="step-name">6 étapes</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🚧</span>
+								<strong class="step-name">Travaux pratiques</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">📦</span>
+								<strong class="step-name">Livrable web</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">💔</span>
+								<strong class="step-name">Travail solo</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🎙</span>
+								<strong class="step-name">Présentation</strong>
+							</li>
+						</ol>
+						<aside class="notes">
+							<p>Le laboratoire se calque sur les 6 étapes de la veille technologique. A chaque étape, vous réaliserez un bout du travail pratique correspondant à l'étape.</p>
+							<p>L'idée est d'alterner théorie/pratique</p>
+							<p>Livrable sous forme d'un BLOG que vous aller réaliser à l'aide de HUGO et héberger le tout sur Github</p>
+							<p>C'est un travail perso car je vous pousse à réfléchir sur ce qui vous motive dans votre métier</p>
+							<p>La présentation vous donne un peu de pression, de bien faire l'exercice. C'est un élément si essentiel dans votre formation et dans vos métiers plus tard.</p>
+						</aside>
+					</section>
+					<section>
+						<table style="font-size:0.4em;margin-top:1em;">
+							<tr>
+								<td width="30%">
+									<h4>
+										Livrable attendu
+									</h4>
+								</td>
+								<td>
+									<h3>Blog traitant de votre domaine de veille</h3>
+									<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
+									<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies ainsi que l'explication du choix du SSG</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										90% – contenu
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le domaine est en relation avec votre Ikigai, ainsi que les taxonomies sont expliqués sur une page <strong>À propos</strong>.
+									</p>
+									<p>
+										✅ Les 6 articles sont en relation avec le domaine (dont 1 sur une expérimentation et 1 avec le système et la liste des sources d'écoute).
+									</p>
+									<p>
+										✅ Le contenu des articles cite la/les sources et explique en quoi ils sont intéressants pour vous et votre domaine et à quel moment cela vous sera utile.
+									</p>																				
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										10% – technique, la forme
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le site est généré avec le SSG de votre choix
+									</p>
+									<p>
+										✅ Le thème est bien choisi (il correspond au domaine)
+									</p>
+									<p>
+										✅ Le site est hébergé sur github et se génére via Github Actions
+									</p>	
+								</td>
+							</tr>							
+						</table>
+						<aside class="notes">
+							On aura l'occasion d'en reparler (je vous recommuniquerais ce tableau)<br/>
+							L'évaluation du cours me permet de voir si l'objectif est atteint. J'insiste sur : <br/>
+							- Je veux être bien sûr que c'est le domaine qui vous intéresse<br/>
+							- Je serai disponible pour en discuter si vous avez de la peine à en trouver un ou le définir<br/>
+							- Je m'intéresse au contenu mais surtout comment vous l'aurez trouvé et ce que vous en avez apprit <br/>
+							- Je veux aussi savoir pourquoi vous avez choisi celui-ci<br/>
+							- Peu de points sur la technique (Vous ne serez pas tous des développeurs, mais vous devez comprendre ce qui est en jeu).
+						</aside>
+					</section>					
+					<section data-background-color="#b300f9">
+						<h2>Questions à cette étape&nbsp;?</h2>
+						<aside class="notes">
+							<p>Vous êtes quel type de classe ?</p>
+						</aside>
+					</section>	
+				</section>	
+				
+							
+				<section>
+					<section>
+						<h2>La veille technologique</h2>
+						<p>Organiser sa formation continue, se tenir au courant des prochaines tendances et anticiper les grands changements dans votre domaine de prédilection.</p>
+					</section>
+					<section>
+						<h2 class="fragment fade-out">Les étapes de la veille</h2>
+						<ol class="steps">
+							 <li class="fragment fade-up">
+								 <span class="step-icon">🎯</span>
+								 <strong class="step-name">Le domaine</strong>
+							 </li>
+							 <li class="fragment fade-up">
+								 <span class="step-icon">📡</span>
+								 <strong class="step-name">Système d'écoute</strong>
+							 </li>
+							 <li class="fragment fade-up">
+								 <span class="step-icon">🎚</span>
+								 <strong class="step-name">Workflow de tri</strong>
+							 </li>	
+							 <li class="fragment fade-up">
+								 <span class="step-icon">🗃</span>
+								 <strong class="step-name">Classement</strong>
+							 </li>
+							 <li class="fragment fade-up">
+								 <span class="step-icon">⏳</span>
+								 <strong class="step-name">L'épreuve du temps</strong>
+							 </li>
+							 <li class="fragment fade-up">
+								 <span class="step-icon">💡</span>
+								 <strong class="step-name">Exploitation</strong>
+							 </li>
+						</ol>
+						<aside class="notes">
+							<p>Pour chaque étape, nous allons étudier des techniques, discuter des options qui s'offrent à vous et mettre en pratique.</p>
+							<ol>
+								<li><strong>🎯Le domaine</strong> – ce qui vous intéresse et qui est votre expertise principale, il est important de l'identifier</li>
+								<li><strong>📡Système d'écoute</strong> – Où s'informer, comment obtenir les bonnes informations, éviter les bulles</li>
+								<li><strong>🎚Workflow de tri</strong> – Un système qui permet de trier, revenir sur les éléments clés</li>
+								<li><strong>🗃Classement</strong> – taxonomie et classification</li>
+								<li><strong>⏳L'épreuve du temps</strong> – un système qui fonctionne dans le temps</li>
+								<li><strong>💡Exploitation</strong> – utiliser cette connaissance</li>
+							</ol>
+						</aside>
+					</section>
+				</section>
+					
+				<!-- ## 🎯Le domaine -->
+				<!-- 
+					Choix du domaine
+					Granularité du domaine
+					Spécialisation, pourquoi? et après?
+					Perception de vos métiers au sein de la formation
+					Orientation dans un "plan de carrière"
+					-> Trouver votre domaine favoris
+					-> Répondre aux questions existentiel
+					  -> Pourquoi ça m'intéresse?
+					  -> Qu'est-ce que cela va m'apporter professionnellement?
+					  -> Fiche de domaine : Dénomination, mot clés, sur-domaine, sous-domaines
+				-->
+				
+				<section>
+					<section>
+						<h2>	
+							<span class="step-icon">🎯</span><br/>
+							Le domaine
+						</h2>
+						<aside class="notes">
+							Le plus important, c'est le QUOI<br/>
+							On ne peut pas s'informer sur tout, il faut choisir un sujet d'écoute. Essayez d'y réfléchir ...
+						</aside>
+					</section>
+					<section>
+						<h2>Choix du domaine</h2>
+						<p>Spécialistes <strong>vs</strong> Généralistes</p>
+						<aside class="notes">
+							<p>Pour le laboratoire, pour votre "carrière"</p>			
+							<p>Se poser la question fondamentale : Ce que j'ai vraiment envie de faire</p>
+							<p>Se positionner pour le travail de bachelor</p>
+							<p>Retour à notre grand thème Spécialistes vs généralistes</p>
+						</aside>
+					</section>
+					<section>
+						<h3>Le cercle <del>de l'ennui</del> du fun</h3>
+						<aside class="notes">
+							C'est important de bien choisir ! Ça va vous suivre !<br/> 
+							Source : https://www.youtube.com/watch?v=5PW4oQgBQXw
+							<p style="color:red;">@push - super talk de Michael Flarup - sur sa carrière de designer, de maker : https://www.youtube.com/watch?v=5PW4oQgBQXw</p>
+						</aside>
+					</section>
+					<section data-background-image="src/circle_02.png" data-background-size="contain">
+						<aside class="notes">
+							Le cercle de l'ennui<br/>
+							Parler de Plomb<br/>
+							Source : https://www.youtube.com/watch?v=5PW4oQgBQXw
+						</aside>
+					</section>
+					<section data-background-image="src/circle_01.png" data-background-size="contain">
+						<aside class="notes">
+							Le cercle du fun
+							Source : https://www.youtube.com/watch?v=5PW4oQgBQXw
+						</aside>
+					</section>
+					<section>
+						<svg viewBox="0 0 186 186" id="ikigai">
+							<g class="lvl-1">
+								<path class="love" d="M92.75,47.34A57.49,57.49,0,0,1,147,38.48a57.51,57.51,0,0,0-108.54,0,57.49,57.49,0,0,1,54.27,8.86Z" />
+								<text x="50%" y="11%" class="small">What you</text>
+								<text x="50%" y="14%">Love</text>
+								<path class="needs" d="M185.5,92.75A57.53,57.53,0,0,0,147,38.48a57.49,57.49,0,0,1-8.86,54.27A57.49,57.49,0,0,1,147,147,57.53,57.53,0,0,0,185.5,92.75Z" />
+								<text x="88%" y="48.5%" class="small">What the world</text>
+								<text x="88%" y="51.5%">Needs</text>
+								<path class="money" d="M92.75,138.16A57.49,57.49,0,0,1,38.48,147,57.51,57.51,0,0,0,147,147a57.49,57.49,0,0,1-54.27-8.86Z" />
+								<text x="50%" y="86%" class="small">What you can be</text>
+								<text x="50%" y="89%">paid for</text>
+								<path class="skills" d="M47.34,92.75a57.49,57.49,0,0,1-8.86-54.27,57.51,57.51,0,0,0,0,108.54,57.49,57.49,0,0,1,8.86-54.27Z" />
+								<text x="12%" y="48.5%" class="small">What you're</text>
+								<text x="12%" y="51.5%">good at</text>
+							</g>
+							<g class="lvl-2">
+								<path class="mission" d="M92.75,47.34a57.61,57.61,0,0,1,19,26.39,57.61,57.61,0,0,1,26.39,19A57.49,57.49,0,0,0,147,38.48a57.49,57.49,0,0,0-54.27,8.86Z" />
+								<text x="69%" y="31%">Mission</text>
+								<path class="vocation" d="M138.16,92.75a57.61,57.61,0,0,1-26.39,19,57.61,57.61,0,0,1-19,26.39A57.49,57.49,0,0,0,147,147a57.49,57.49,0,0,0-8.86-54.27Z" />
+								<text x="69%" y="69%">Vocation</text>
+								<path class="profession" d="M92.75,138.16a57.61,57.61,0,0,1-19-26.39,57.61,57.61,0,0,1-26.39-19A57.49,57.49,0,0,0,38.48,147a57.49,57.49,0,0,0,54.27-8.86Z" />
+								<text x="31%" y="69%">Profession</text>
+								<path class="passion" d="M47.34,92.75a57.61,57.61,0,0,1,26.39-19,57.61,57.61,0,0,1,19-26.39,57.49,57.49,0,0,0-54.27-8.86,57.49,57.49,0,0,0,8.86,54.27Z" />
+								<text x="31%" y="31%">Passion</text>
+							</g>						
+							<g class="lvl-4">
+								<path class="ikigai" d="M111.77,73.73a57.62,57.62,0,0,0-38,0,57.62,57.62,0,0,0,0,38,57.62,57.62,0,0,0,38,0,57.62,57.62,0,0,0,0-38Z" />
+								<text x="50%" y="50%">Ikigai</text>
+							</g>
+							<g class="lvl-3">
+							<path class="delight" d="M111.77,73.73a57.61,57.61,0,0,0-19-26.39,57.61,57.61,0,0,0-19,26.39,57.62,57.62,0,0,1,38,0Z">
+							</path>
+							<text x="50%" y="33%">Delight &amp; fullness</text>
+							<text x="50%" y="35%">but no wealth</text>
+							<path class="excitement" d="M111.77,73.73a57.62,57.62,0,0,1,0,38,57.61,57.61,0,0,0,26.39-19A57.61,57.61,0,0,0,111.77,73.73Z">
+							</path>
+							<text x="67%" y="50%">Excitement &amp; complacency</text>
+							<text x="67%" y="52%">but sense of uncertainty</text>
+							<path class="comfort" d="M73.73,111.77a57.61,57.61,0,0,0,19,26.39,57.61,57.61,0,0,0,19-26.39,57.62,57.62,0,0,1-38,0Z">
+							</path>
+							<text x="50%" y="67%">Comfortable but feeling</text>
+							<text x="50%" y="69%">of emptiness</text>
+							<path class="satisfaction" d="M73.73,73.73a57.61,57.61,0,0,0-26.39,19,57.61,57.61,0,0,0,26.39,19,57.62,57.62,0,0,1,0-38Z">
+							</path>
+							<text x="33%" y="50%">Satisfaction, but feeling</text>
+							<text x="33%" y="52%">of uselessness</text>
+						</g>							
+						</svg>						
+						<!-- Source : https://codepen.io/mkmueller/pen/JBEBjL  -->
+						<aside class="notes">
+							<p>Prenez un peu de temps pour réfléchir à votre Ikigai</p>
+							<p>Principe d'équilibre au quotidien entre ce que l'on aime faire, ce pourquoi on est bon, que le monde a besoin et pour lequel on peut même demander de l'argent</p>
+							<p>On cherche ici à trouver le bonheur au travail</p>
+							<p>https://blogs.mediapart.fr/flebas/blog/240316/l-arnaque-de-l-etymologie-du-mot-travail</p>
+						</aside>
+					</section>
+					<section>
+						<h2>🚧</h2>
+						<h2>Exercice pratique nº1</h2>
+						<p>Tracer votre Ikigai. <br/>Ce pourqui vous vous levez le matin <mark>(en semaine)</mark></p>
+						<p class="fragment fade-up">45 min, solo</p>
+						<p class="fragment fade-up">C'est un exercice personnel</p>
+						<aside class="notes">
+							45min, solo <br/>
+						</aside>
+					</section>
+					<section>
+						<h2>Quel élément de la formation COMEM vous passionne le plus ?</h2>
+						<aside class="notes">
+							Je fais une petite pause sur cette slide. pour que vous y réfléchissiez encore un peu :-)<br/>
+							à placer dans votre ikigai
+							
+						</aside>
+					</section>
+					<section data-background-color="#D466FF">
+						<table class="map2x2">
+							<tr>
+								<td style="vertical-align: bottom;">
+									technique
+								</td>
+								<td style="vertical-align: top;">
+									expertise
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: bottom; text-align: right;">
+									management
+								</td>
+								<td style="vertical-align: top; text-align: right;">
+									communication
+								</td>
+							</tr>							
+						</table>
+						<aside class="notes">
+							<p>Une manière de représenter les axes de la formation en ingénierie des médias.</p>
+							<p>
+								axe des x : tourné vers l'outil, tourné vers l'humain (je mets marketing et communication dans le même panier)
+							</p>
+							<p>
+								axe des y : généraliste à spécialiste. Ou gérer vs faire. (a savoir qu'on ne peut pas commencer sa carrière par gérer. Il faut commencer par faire :-P)
+							</p>
+							<p>Essayez de vous positionner sur cette grille</p>
+						</aside>
+					</section>
+					<section>
+						<h2>🗺 Fiche de domaine</h2>
+						<table>
+							<tr>
+								<td width="30%"><strong>Domaine</strong></td>
+								<td>Dénomination, ensemble de technologies, industrie, ...</td>
+							</tr>
+							<tr>
+								<td><strong>Mots-clés</strong></td>
+								<td>Lexique du domaine</td>
+							</tr>
+							<tr>
+								<td><strong>Sous-domaines</strong></td>
+								<td>Division en sous-thèmes et domaines directement apparentés</td>
+							</tr>
+							<tr>
+								<td><strong>Pourquoi ?</strong></td>
+								<td>Raison de mon intérêt, lien avec mon (futur) métier, adéquation avec mon ikigai</td>
+							</tr>							
+						</table>
+						<aside class="notes">
+							<p>	
+								Définir plus précisément un domaine de prédilection. Si on imagine par exemple, dans mon cas, un élément précis du web qui me passionne : Le CSS
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h3>Exemple : Design d'interaction web</h3>
+						<table style="font-size:0.8em;">
+							<tr>
+								<td width="30%"><strong>Domaine</strong></td>
+								<td>Mise en page et design d'interaction web : principalement autour des technologies HTML/<mark>CSS</mark> et JS</td>
+							</tr>
+							<tr>
+								<td><strong>Mots-clés</strong></td>
+								<td>Layouting, animation, interactivité, UX, accessibilité, responsive, print layout, performances, progressive enhancement, graceful degradation</td>
+							</tr>
+							<tr>
+								<td><strong>Sous-domaines</strong></td>
+								<td>Mise en page, interactivité, design systems(styleguide), maintenance, collaboration design/dev</td>
+							</tr>
+							<tr>
+								<td><strong>Pourquoi ?</strong></td>
+								<td>Intersection entre design et technologie</td>
+							</tr>								
+						</table>
+						<aside class="notes">
+							<p>	
+								Le design d'interaction me passionne depuis 1998, la différence même avec le design print.
+							</p>
+						</aside>
+					</section>					
+					<section>
+						<h1>🚧</h1>
+						<h2>Exercice pratique nº2</h2>
+						<p>Définir votre domaine de veille, Thème favoris, <mark>votre passion</mark></p>
+						<p class="fragment fade-up">30 min, solo puis présentation à la classe</p>
+						<p class="fragment fade-up">Rédaction de la fiche de domaine (Dénomination, mots-clés, sous-domaines)</p>
+						<aside class="notes">
+							45min, solo <br/>
+							
+							ex : Un langage, une stack de technologie (penser aux usages plus qu'à l'outil) (mais pas un framework). Quelque chose qui dure dans le temps
+						</aside>
+					</section>
+					<section>
+						<style>
+							.map2x2{
+								width:100%;
+								height:60vh;	
+								border: 1px solid currentcolor;
+							}
+							.map2x2 td{
+								width: 50%;
+								height: 50%;
+								border: 1px solid currentcolor;
+							}
+						</style>
+						<table class="map2x2">
+							<tr>
+								<td style="vertical-align: bottom;">
+									technique
+								</td>
+								<td style="vertical-align: top;">
+									expertise
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: bottom; text-align: right;">
+									management
+								</td>
+								<td style="vertical-align: top; text-align: right;">
+									communication
+								</td>
+							</tr>							
+						</table>
+						<aside class="notes">
+							<h3>Classer le domaine dans la grille</h3>
+							<p>
+								Retour à notre tableau
+							</p>
+							<p>Chacun votre tour, présenter votre domaine, le pourquoi et placez le sur la grille</p>
+							<p>
+								Dans mon exemple : le CSS <br/>
+								Pourquoi : Intersection entre design et technologie<br/>
+								Mon point est en haut au centre, car je le défini comme un domaine plus d'expertise que de gestion.
+							</p>
+						</aside>
+					</section>								
+					
+				</section>
+
+				<!-- ## 📡Système d'écoute -->
+				<!-- 
+					Où trouver l'information
+					Outils :) 
+					Lieux? Événements?
+					Événements officiels, standardisation du domaine?
+					-> Via les réseaux professionnels, et personnel
+					-> Définir une liste d'écoute
+					  -> fiche d'écoute : Magazines, comptes twitter, newsletter, linkedIn, Reddit, Instagram, etc...
+					  -> Réfléchir au concept d'URL :-P
+				-->				
+				<section>
+					<section>
+						<ol class="steps">
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎯</span>
+								 <strong class="step-name">Le domaine</strong>
+							 </li>
+							 <li class="fragment grow">
+								 <span class="step-icon">📡</span>
+								 <strong class="step-name">Système d'écoute</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">🎚</span>
+								 <strong class="step-name">Workflow de tri</strong>
+							 </li>	
+							 <li class="">
+								 <span class="step-icon">🗃</span>
+								 <strong class="step-name">Classement</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">⏳</span>
+								 <strong class="step-name">L'épreuve du temps</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">💡</span>
+								 <strong class="step-name">Exploitation</strong>
+							 </li>
+						</ol>
+						<aside class="notes">
+							Le domaine est défini, passons maintenant au système d'écoute. La veille finalement c'est écouter, rester attentif. 
+						</aside>
+					</section>
+					<section>
+						<h2>	
+							<span class="step-icon">📡</span><br/>
+							Système d'écoute
+						</h2>
+						<aside class="notes">
+							Comment, où et vers qui obtenir l'information. La précieuse information sur les nouveautés, les prochaines tendances, la direction du domaine...
+						</aside>
+					</section>
+					<section>
+						<h2>Online/Offline<span class="fragment fade-up">😷</span></h2>
+						
+						<aside class="notes">
+							<p>2 canaux distincts même si .. aujourd'hui même les conférences sont finalement en ligne :-)</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Canaux 🔮</h2>
+						<ul>
+							<li class="fragment">
+								Réseaux sociaux
+							</li>
+							<li class="fragment">
+								Blogs / magazines
+							</li>
+							<li class="fragment">
+								Podcasts
+							</li>
+							<li class="fragment">
+								Newsletters
+							</li>		
+							<li class="fragment">
+								Événements (meetup, conférence)
+							</li>
+							<li class="fragment">
+								Agrégateurs (alertes)
+							</li>
+						</ul>
+						<aside class="notes">
+							<p>Les canaux sont distinct selon le type de domaine que l'on écoute</p>
+							<p>Pour chaque industrie, on distingue des canaux plus ou moins fournis</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Émetteurs 📣</h2>
+						<ul>
+							<li class="fragment">
+								Personnalité du domaine
+							</li>
+							<li class="fragment">
+								Influenceurs
+							</li>
+							<li class="fragment">
+								Organisations professionnelles
+							</li>
+							<li class="fragment">
+								Organismes de standardisation
+							</li>
+							<li class="fragment">
+								Entreprises leader dans le domaine
+							</li>			
+						</ul>
+						<aside class="notes">
+							Personnes ou organisations
+						</aside>
+					</section>
+					<section>
+						<h2>Astuces 🎮</h2>
+						<aside class="notes">
+							Il n'y a pas vraiment de méthode, je pense plus à des trucs et astuces pour trouver les bons canaux et les bons émetteurs.
+						</aside>
+					</section>
+					<section data-background-image="src/Elon-Musk-Buy-Twitter-Friday.jpg" data-background-size="cover">
+						<aside class="notes">
+							Qui utilise X ? <br/>
+							Il est devenu pour moi un lieu très prolifique de veille !<br/>
+							Aujourd'hui, je suis sur Mastodon, j'ai suivi mes émetteur.
+							Pourquoi ?
+						</aside>
+					</section>
+					<section data-background-image="src/veille_speakers_twitter_quite.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Ces derniers jours tout le monde quitte le navire et attend de voir où la veille va arriver</p>
+						</aside>	
+					</section>
+					<section data-background-image="src/pcctash.jpg" data-background-size="cover">
+						<aside class="notes">
+							<p>Internet c'est ça ....</p>
+						</aside>	
+					</section>
+					<section data-background-image="src/internet_museum.jpg" data-background-size="cover">
+						<aside class="notes">
+							<h2>Internet a la mémoire courte</h2>
+							<p>On va le voir c'est important de dissocier les émetteurs des moyens de diffusion</p>
+							<p>Vous voulez suivre des personnes/entités même quand ils/elles auront quitté twitter  </p>
+						</aside>	
+					</section>
+					<section>
+						<h4>Conférences → speakers</h4>
+						<div class="r-stack">
+							<img src="src/veille_speakers0.png" class="fragment fade-up">
+							<img src="src/veille_speakers1.png" class="fragment fade-up">
+							<img src="src/veille_speakers2.png" class="fragment fade-up">
+							<img src="src/veille_speakers_twitter_rabit_hole0.png" class="fragment fade-up">
+							<img src="src/veille_speakers_twitter_rabit_hole1.png" class="fragment fade-up">
+							<img src="src/veille_speakers_twitter_rabit_hole2.png" class="fragment fade-up">
+							<img src="src/veille_speakers_twitter_rabit_hole3.png" class="fragment fade-up">
+							<img src="src/veille_speakers_twitter_rabit_hole4.png" class="fragment fade-up">
+						</div>
+						<aside class="notes">
+							<p>Qui utilise Twitter/X ?</p>
+							<p>Dans mon domaine de prédilection, c'est un canal très utilisé</p>
+							
+							<p>Besoin d'une introduction à twitter ? Followers, mécanisme, les listes etc ... ?</p>
+						</aside>
+					</section>
+					<section>
+						<div class="r-stack">
+							<img src="src/veille_speakers_twitter_rabit_hole6.png" class="fragment fade-up">
+							<img src="src/veille_speakers_twitter_rabit_hole7.png" class="fragment fade-up">
+							<img src="src/veille_speakers_twitter_rabit_hole8.png" class="fragment fade-up">
+						</div>
+						<aside class="notes">
+							<p>Dénicher les listes d'émetteurs</p>
+						</aside>
+					</section>
+					<section>
+						<div class="r-stack">
+							<img src="src/veille_speakers1.png">
+							<img src="src/veille_notist_6.png" class="fragment fade-up">
+							<img src="src/veille_notist_5.png" class="fragment fade-up">
+							<img src="src/veille_notist_4.png" class="fragment fade-up">
+							<img src="src/veille_notist_3.png" class="fragment fade-up">
+							<img src="src/veille_notist_2.png" class="fragment fade-up">
+							<img src="src/veille_notist_1.png" class="fragment fade-up">
+							<img src="src/veille_notist_0.png" class="fragment fade-up">
+						</div>						
+						<aside class="notes">
+							<p>Rachel Andrew</p>
+							<p>lire la bio, membre du CSS Working Group (ceux qui décide/discuter ce qui sera implémenter dans les prochaines version de CSS)</p>
+							<p>A créer ce site Noti.st qui permet aux speakers de tenir à jour leur profil de speaker (avec slides, videos etc.)</p>
+							<p style="color:red;">@push Répertoire de slides partagé par leurs speakers, classés par thème, conférences, etc. https://noti.st/</p>  
+						</aside>
+					</section>		
+					<section>
+						<img src="src/devto_ressources.png" alt="">
+						<aside class="notes">
+							Des plate-forme d'échange et d'informations comme dev.to permettent en plus de la communauté de trouver des informations sur le domaine 
+						</aside>
+					</section>
+					<section>
+						<div class="r-stack">
+							<img src="src/veille_2023_frontendconf_vasilis_1.png">
+							<img src="src/veille_2023_frontendconf_vasilis_2.png" class="fragment fade-up">
+							<img src="src/veille_2023_frontendconf_vasilis_3.png" class="fragment fade-up">
+							<img src="src/veille_2023_frontendconf_vasilis_4.png" class="fragment fade-up">
+							<img src="src/veille_2023_frontendconf_vasilis_5.png" class="fragment fade-up">
+							<img src="src/veille_2023_frontendconf_vasilis_6.png" class="fragment fade-up">
+						</div>						
+						<aside class="notes">
+							<p>Vasilis</p>
+							<p>lire la bio, site avec peu d'infos sur ce qu'il publie</p>
+							<p>Ensuite, twitter mort, -> Mastodon, publie beaucoup en hollandais</p>
+						</aside>
+					</section>						
+					<section>
+						<h2>🚧</h2>
+						<h2>Exercice pratique nº3</h2>
+						<p class="fragment fade-up">90 min, solo</p>
+						<p>Identifier pour votre domaine : les réseaux, les acteurs, les événements qui informent</p>
+						<p><mark>Perdez-vous un peu</mark> dans la toile 🕵️‍♀️</p>
+						<p style="font-size:0.6em;">Notez les URLs, les façons de s'abonner (newsletter, RSS, follow on twitter, youtube, instagram...)<br/>Rendu : Commencez le 1er article qui liste les émetteurs·trices et sources de votre veille (en expliquant pourquoi vous les avez choisis)</p>
+					</section>
+				</section>
+				<!-- @@@@@@@@@ -->
+				<!-- Cours 2/5 -->
+				<!-- @@@@@@@@@ -->
+				<section>
+					<section>
+						<h1>Welcome back</h1>
+					</section>
+					<section>
+						<h2>
+							Vous vous souvenez pourquoi on est là ?
+						</h2>
+						<aside class="notes">
+							Anyone?
+						</aside>
+					</section>
+					<section>
+						<h2>🧪 L'objectif du lab</h2>
+					<ul>
+						<li class="fragment fade-up">Importance de la veille</li>
+						<li class="fragment fade-up">Prendre du recule sur votre profession</li>
+						<li class="fragment fade-up">Mécanismes de la gestion des connaissances</li>
+						<li class="fragment fade-up">Trouver <strong>votre système</strong></li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Vous faire prendre conscience de l'importance de la veille pour votre parcours professionnel</li>
+							<li>Recule sur la profession des médias, la transformation digitale et les technologies de l'information. Vous faire prendre conscience des effets du temps qui passe</li>
+							<li>Comprendre les mécanismes de la veille et de la gestion des connaissances personnelles</li>
+							<li>Vous aider à trouver votre système</li>
+						</ul>
+					</aside>
+					</section>
+					<section>
+					<h2>Comment</h2>
+						<ol class="steps">
+							<li class="fragment fade-up">
+								<span class="step-icon">🎲</span>
+								<strong class="step-name">6 étapes</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🚧</span>
+								<strong class="step-name">Travaux pratiques</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">📦</span>
+								<strong class="step-name">Livrable web</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">💔</span>
+								<strong class="step-name">Travail solo</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🎙</span>
+								<strong class="step-name">Présentation</strong>
+							</li>
+						</ol>
+						<aside class="notes">
+							<p>Le laboratoire se calque sur les 6 étapes de la veille technologique. A chaque étape, vous réaliserez un bout du travail pratique correspondant à l'étape.</p>
+							<p>L'idée est d'alterner théorie/pratique</p>
+							<p>Livrable sous forme d'un BLOG que vous aller réaliser à l'aide de HUGO et héberger le tout sur Github</p>
+							<p>C'est un travail perso car je vous pousse à réfléchir sur ce qui vous motive dans votre métier</p>
+							<p>La présentation vous donne un peu de pression, de bien faire l'exercice. C'est un élément si essentiel dans votre formation et dans vos métiers plus tard.</p>
+						</aside>
+					</section>
+					<section>
+						<ol class="steps">
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎯</span>
+								 <strong class="step-name">Le domaine</strong>
+							 </li>
+							 <li class="fragment grow">
+								 <span class="step-icon">📡</span>
+								 <strong class="step-name">Système d'écoute</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">🎚</span>
+								 <strong class="step-name">Workflow de tri</strong>
+							 </li>	
+							 <li class="">
+								 <span class="step-icon">🗃</span>
+								 <strong class="step-name">Classement</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">⏳</span>
+								 <strong class="step-name">L'épreuve du temps</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">💡</span>
+								 <strong class="step-name">Exploitation</strong>
+							 </li>
+						</ol>
+						<aside class="notes">
+							Le domaine est défini, passons maintenant au système d'écoute. La veille finalement c'est écouter, rester attentif. 
+						</aside>
+					</section>
+					<section>
+						<h2>🚧</h2>
+						<h2>Exercice pratique nº3</h2>
+						<p>Identifier pour votre domaine : les réseaux, les acteurs, les événements qui informent</p>
+						<p><mark>Perdez-vous un peu</mark> dans la toile 🕵️‍♀️</p>
+						<p style="font-size:0.6em;">Notez les URLs, les façons de s'abonner (newsletter, RSS, follow on twitter, youtube, instagram...)<br/>Rendu : Commencez le 1er article qui liste les émetteurs·trices et sources de votre veille (en expliquant pourquoi vous les avez choisis)</p>
+					</section>
+					<section>
+						<table style="font-size:0.4em;margin-top:1em;">
+							<tr>
+								<td width="30%">
+									<h4>
+										Livrable attendu
+									</h4>
+								</td>
+								<td>
+									<h3>Blog traitant de votre domaine de veille</h3>
+									<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
+									<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies ainsi que l'explication du choix du SSG</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										90% – contenu
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le domaine est en relation avec votre Ikigai, ainsi que les taxonomies sont expliqués sur une page <strong>À propos</strong>.
+									</p>
+									<p>
+										✅ Les 6 articles sont en relation avec le domaine (dont 1 sur une expérimentation et 1 avec le système et la liste des sources d'écoute).
+									</p>
+									<p>
+										✅ Le contenu des articles cite la/les sources et explique en quoi ils sont intéressants pour vous et votre domaine et à quel moment cela vous sera utile.
+									</p>																				
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										10% – technique, la forme
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le site est généré avec le SSG de votre choix
+									</p>
+									<p>
+										✅ Le thème est bien choisi (il correspond au domaine)
+									</p>
+									<p>
+										✅ Le site est hébergé sur github et se génére via Github Actions
+									</p>	
+								</td>
+							</tr>							
+						</table>
+						<aside class="notes">
+							On aura l'occasion d'en reparler (je vous recommuniquerais ce tableau)<br/>
+							L'évaluation du cours me permet de voir si l'objectif est atteint. J'insiste sur : <br/>
+							- Je veux être bien sûr que c'est le domaine qui vous intéresse<br/>
+							- Je serai disponible pour en discuter si vous avez de la peine à en trouver un ou le définir<br/>
+							- Je m'intéresse au contenu mais surtout comment vous l'aurez trouvé et ce que vous en avez apprit <br/>
+							- Je veux aussi savoir pourquoi vous avez choisi celui-ci<br/>
+							- Peu de points sur la technique (Vous ne serez pas tous des développeurs, mais vous devez comprendre ce qui est en jeu).
+						</aside>
+					</section>						
+					<section data-background="src/mindmap_css_search.png" data-background-size="contain" data-background-color="#ddd">
+						<aside class="notes">
+							<h3>Exemple</h3>
+							https://github.com/zudochkin/awesome-newsletters
+							https://dev.to/remotesynth/the-best-newsletters-to-subscribe-to-for-a-frontend-developer-1ni1
+							<p>
+								RSS, newsletter, Twitter, Google Alerts, pinterest account
+							</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_pinterest.png" data-background-size="contain">
+						<aside class="notes">
+							Exemple de veille visuelle, sur la représentation des styleguides
+						</aside>
+					</section>
+					<section data-background-image="src/Elon-Musk-Buy-Twitter-Friday.jpg" data-background-size="cover">
+						<aside class="notes">
+							Twitter super outil !
+							Mais le danger c'est pas seulement Elon !
+						</aside>
+					</section>					
+					<section data-background-image="src/bubble_twitter_suggestions.png" data-background-size="contain">
+						<aside class="notes">
+							Twitter super outil !
+							Le danger, c'est les suggestions "intelligentes"
+						</aside>
+					</section>
+					<section>
+						<h2>La bulle ⚗️ et l'écho 🙉</h2>
+						<p class="fragment fade-up">
+							<strong>Filter bubble :</strong> Algorithmes de sélection des informations (médias sociaux, Agrégateurs, Recherche)
+						</p>
+						<p class="fragment fade-up">
+							<strong>Echo chamber :</strong> Distorsion de la réalité due à une surexposition à un seul point de vue
+						</p>
+						<aside class="notes">
+							<p>
+								Le concept selon lequel, en utilisant les réseaux sociaux pour s'informer, les algorithmes nous propose des nouveaux contenus ou personnes à suivre qui résonne avec le cercle actuel, la bulle. Et ainsi on se retrouve dans une "chambre à écho" convaincu d'être dans la bonne réalité
+							</p>
+							<p>
+								Filter bubbling -> nous met dans une echo chamber (mais on a d'autre façon d'atterrir dans une "echo-chamber" :-) en regardant qu'une seule chaine de TV, ou en ne lisant qu'un journal)
+							</p>
+							<small>	
+							<p>
+								<a href="https://reutersinstitute.politics.ox.ac.uk/risj-review/truth-behind-filter-bubbles-bursting-some-myths">
+								https://reutersinstitute.politics.ox.ac.uk/risj-review/truth-behind-filter-bubbles-bursting-some-myths
+								</a>
+							</p>
+							<p>
+								<a href="https://www.nbcnews.com/better/lifestyle/problem-social-media-reinforcement-bubbles-what-you-can-do-about-ncna1063896#anchor-Socialmediaalgorithmsfilteroutreality">
+									https://www.nbcnews.com/better/lifestyle/problem-social-media-reinforcement-bubbles-what-you-can-do-about-ncna1063896#anchor-Socialmediaalgorithmsfilteroutreality
+								</a>	
+							</p>
+							<p>
+								<a href="https://medium.com/@10797952/the-causes-and-effects-of-filter-bubbles-and-how-to-break-free-df6c5cbf919f">
+									https://medium.com/@10797952/the-causes-and-effects-of-filter-bubbles-and-how-to-break-free-df6c5cbf919f
+								</a>	
+							</p>
+							<p>
+								<a href="https://irlpodcast.org/season2/episode6/">
+									https://irlpodcast.org/season2/episode6/
+								</a>	
+							</p>
+							</small>
+							<p style="color:red;">@push - Podcast IRL de Mozilla sur le thème des filtered bubble https://irlpodcast.org/season2/episode6/</p>
+						</aside>
+					</section>								
+					<section data-background="src/matric_gif.gif" data-background-color="#000000" data-background-opacity="0.5">
+							<ol>
+								<li class="fragment fade-up">Prise de conscience</li>
+								<li class="fragment fade-up">Se méfier des recommandations</li>
+								<li class="fragment fade-up">Diversifier les canaux</li>
+								<li class="fragment fade-up">IRL check</li>
+							</ol>
+						<aside class="notes">
+							<p>Comment percer la bulle et sortir de cette chambre</p>
+							<p>Sincèrement : "Never ending quest"</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_lists_5.png" data-background-size="contain">
+						<aside class="notes">
+							<p>
+								Sortir des réseaux, revenir aux annuaires et listes collaboratives comme par exemple : List of awesome lists (contribution model)
+							</p>
+							<p>
+								<a href="https://github.com/sindresorhus/awesome">https://github.com/sindresorhus/awesome</a>
+							</p>
+							<p style="color:red;">@push awesome listes sur Github https://github.com/sindresorhus/awesome</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_lists_6.png" data-background-size="contain">
+						<aside class="notes">
+							<p>
+								Exemple of Awesome sub lists (contribution model)
+							</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_lists_7.png" data-background-size="contain">
+						<aside class="notes">
+							<p>
+								Progressive enhancement ressources
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h2>🛠 outils</h2>
+						<aside class="notes">
+							Outils pour l'écoute, système de monitoring et de lecture.
+						</aside>
+					</section>
+					<section>
+						<h3>Classification suivant la source</h3>
+						<ul>
+							<li class="fragment fade-up">Média (images, vidéo, textes, sons)</li>
+							<li class="fragment fade-up">Taille (long format, brèves)</li>
+							<li class="fragment fade-up">Périodicité (real time, weekly digest)</li>
+							<li class="fragment fade-up">Technologies (Web, Apps, Mails)</li>
+						</ul>
+						<aside class="notes">
+							<p>
+								Classification des outils d'écoute par type d'informations
+							</p>
+							<p>Va influencer le type d'outil pour l'écoute</p>
+							<p>Comme d'habitude, je vous conseille de mixer un peu tout :-)</p>
+							<p>Quelques exemples</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_tools_0.png" data-background-size="contain">
+						<aside class="notes">
+							Les outils comme Google Alertes, vous permet de s'abonner à un sujet précis et recevoir un e-mail lorsqu'il y a de nouveau résultats indexés.
+							<a href="https://www.google.com/alerts">
+								https://www.google.com/alerts
+							</a>
+						</aside>
+					</section>
+					<section data-background="src/veille_tools_1.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Agrégateur d'actualité :</p>
+
+							<p>
+										With Inoreader, content comes to you, the minute it's available. Subscribe to RSS Feeds, Blogs, Podcasts, Twitter searches, Facebook pages, even Email Newsletters!
+							</p>
+								Logiciel payant : <a href="https://www.inoreader.com/">https://www.inoreader.com/</a>
+						</aside>
+					</section>
+					<section data-background="src/veille_tools_3.png" data-background-size="contain">
+						<aside class="notes">
+							<p>
+								Feedly qui permet de s'abonner à des flux RSS mais aussi au réseaux sociaux Twitter, Reddit, Google News ...
+							</p>
+							<p>
+								Aussi en version pro <a href="https://feedly.com/i/pro/welcome">https://feedly.com/i/pro/welcome</a>
+							</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_tools_2.png" data-background-size="contain">
+						<aside class="notes">
+							<p>
+								Outil également disponible en version PRO - Outil de filtre/tri intéressant
+							</p>
+						</aside>
+					</section>
+					<section data-background="src/yakread.png" data-background-size="contain">
+							<aside class="notes">
+								Outil permettant de s'abonner par e-mail à nos propres flux - 5 partages de liens (histoire d'arriver à rattraper le fil)
+								<p style="color:red;">@push 5 liens par mails par jour provenant des sources enregistrées par vous : https://yakread.com/</p>
+							</aside>
+					</section>
+					<section data-background="src/veille_tools_4.png" data-background-size="contain">
+						<aside class="notes">
+							<p>
+								Outil de digest quotidien envoyé par e-mail
+							</p>
+							<p>
+								<a href="https://mailbrew.com/">https://mailbrew.com/</a>
+							</p>
+						</aside>
+					</section>
+					<section data-background="src/mailbrew_presentation.gif" data-background-size="contain" data-background-color="#ffffff">
+						<aside class="notes">
+							Fonctionnement de mailbrew qui crée un digest quotidien de plusieurs sources
+						</aside>
+					</section>
+					<section>
+						<h3>
+							Choix des outils 🛠
+						</h3>
+						<ul>
+							<li class="fragment fade-up">
+								Multi-canaux
+							</li>
+							<li class="fragment fade-up">
+								Article vs Digest
+							</li>
+							<li class="fragment fade-up">
+								Facilité d'exportation du système
+							</li>
+							<li class="fragment fade-up">
+								Ouverture
+							</li>
+						</ul>
+						<aside class="notes">
+							<p>Privilégier un maximum de canaux, et donc outil permettant cette multitude.</p> 
+							<p>Pour des sujets/domaines avec un grand bassin d'expert/utilisateurs, les digests sont de bon outil </p>
+							<p>Les possibilité d'exportation des listes d'écoute</p>
+							<p>Possibilité de connecter l'outil d'écoute avec l'outil d'archivage est clé</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Recap 📡</h2>
+						<ul>
+							<li class="fragment fade-up">Étape clé de la veille</li>
+							<li class="fragment fade-up">Attention à la bulle</li>
+							<li class="fragment fade-up">Ouverture des outils</li>
+							<li class="fragment fade-up">Maintenance des listes et outils</li>
+						</ul>
+						<aside class="notes">
+							<p>Le système d'écoute une des étapes clés, mais très compliqué de la veille.</p>
+							<p>Filter bubble !</p>
+							<p>Beaucoup d'outil sont payants, mais il existe des systèmes ouverts, libre et standard (RSS/EMAIL/WEB)</p>
+							<p>la maintenance de ces listes est primordiale, ajouter de nouvelle source et supprimer celles qui génère trop de bruit, discipline importante</p>
+						</aside>
+					</section>
+					<section>
+						<h2>🚧</h2>
+						<h2>Exercice pratique nº4</h2>
+						<p>Sélectionner <mark>consciencieusement</mark> 15 articles/éléments/medias</p>
+						<p>Lisez/écoutez/visionnez les attentivement</p>
+						<p>Prenez le meilleur, préparez 3 slides pour le présenter à la classe</p>
+					</section>	
+				</section>
+
+				<!-- @@@@@@@@ -->
+				<!-- PRESENTATIONS🎙  -->
+				<!-- @@@@@@@@ -->
+				<section>
+					<section>
+						<h1>🎙</h1>
+					</section>
+					<section>
+						<h3>Compréhension de <code>git</code></h3>
+					</section>
+					<section data-background-image="src/git.png" data-background-color="white" data-background-size="contain">
+					</section>
+					<section>
+						<h3><code>git</code> ≠ <a href="https://github.com">github.com</a></h3>
+					</section>
+					<section data-background-image="src/linus.jpg" data-background-size="cover">
+						<aside class="notes">
+							Linus ne voulait pas utiliser Mercrurial<br/>
+							et plus non plus SVN<br/>
+							Du coup il a créé git
+						</aside>
+					</section>
+					<section data-background-image="src/fork.png" data-background-size="contain">
+						<h3>
+							<a href="https://github.com/zufrieden/slides-veille-tech-heig-2023">github.com/zufrieden/slides-veille-tech-heig-2023</a>
+						</h3>
+					</section>
+					<section data-background-image="src/fork1.png" data-background-size="contain">
+					</section>
+					<section data-background-image="src/index_slides.png" data-background-size="contain">
+					</section>
+					<section data-background-image="src/fork2.png" data-background-size="contain">
+					</section>																													
+					<section>
+						<pre><code data-line-numbers="2-5|6-10|11-13|14-16">
+<section>
+	<h1 class="student m51-X" id="mon_compte_github">Prénom Nom</h1>
+	<h2>mon domaine ...</h2>
+</section>
+<section>
+	<h2>Mon sujet</h2>
+	<h3>Ma source</h3>
+	<h3>Pourquoi ?</h3>
+</section>
+<section >
+	Slide 1
+</section>
+<section data-background-image="https://monsite.com/monimage.png" 
+data-background-size="contain">
+	Slide 2
+</section>
+<section>
+	Slide 3
+</section>
+						</code></pre>
+					</section>
+					<section>
+						<pre><code data-line-numbers="4-6">
+<section>
+	<h3>Slide 3</h3>
+	<aside class="notes">
+	vos notes de présentation
+	</aside>	
+</section>					
+						</code></pre>
+					</section>
+					<section>
+						<pre><code data-line-numbers="1">data-background-image="https://xyz/monimage.png"</code></pre>
+						<pre><code data-line-numbers="1">data-background-size="contain"</code></pre>
+						<pre><code data-line-numbers="1">data-background-size="cover"</code></pre>
+					</section>
+				</section>
+
+
+				
+				
+				
+				<!-- @@@@@@@@@ -->
+				
+				
+				<section>
+					<section>
+						<h2>Welcome 🤗<br/> back back back</h2>
+						<aside class="notes">
+							Retour du laboratoire.<br/>
+							3ieme cours sur 5.<br/>
+							à la pause, on aura fait la moitié du laboratoire
+						</aside>
+					</section>
+					<section>
+						<h3>Qu'avez-vous appris <br/>de plus important ?</h3>
+						<aside class="notes">
+							pourquoi x5
+						</aside>
+					</section>
+					<section>
+						<h2>Au menu 👨🏻‍🍳</h2>
+						<ol class="steps">
+							<li class="fragment fade-up">
+								<span class="step-icon">🎚 <span style="font-size:40%">et</span> 🗃</span>
+								<strong class="step-name">Théorie</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🫣</span>
+								<strong class="step-name">Coder</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🌏</span>
+								<strong class="step-name">Déployer</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">✍️</span>
+								<strong class="step-name">Articles</strong>
+							</li>
+						</ol>
+						<aside class="notes">
+							Nous allons voir la théorie du workflow de tri !<br/>
+							Choisir votre SSG pour générer votre site web<br/>
+							Le déployer gratuitement sur Github pages<br/>
+							Et vous laisser du temps pour commencer/continuer la rédaction des articles
+						</aside>
+					</section>
+					<section>
+						<h2>Questions ?</h2>
+					</section>
+				</section>
+				
+				<!-- ## 🎚Workflow de tri -->
+				<!--
+					On cherche à savoir quoi en fait?!
+					Que faire d'un bon article
+					Quel système de tri, combien de niveau, mettre de coté, lire, puis définir la pertinence. Entonnoir à pertinence.
+				-->								
+				<section>
+					<section>
+						<ol class="steps">
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎯</span>
+								 <strong class="step-name">Le domaine</strong>
+							 </li>
+							 <li class="fragment shrink">
+								 <span class="step-icon">📡</span>
+								 <strong class="step-name">Système d'écoute</strong>
+							 </li>
+							 <li class="fragment grow">
+								 <span class="step-icon">🎚</span>
+								 <strong class="step-name">Workflow de tri</strong>
+							 </li>	
+							 <li class="">
+								 <span class="step-icon">🗃</span>
+								 <strong class="step-name">Classement</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">⏳</span>
+								 <strong class="step-name">L'épreuve du temps</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">💡</span>
+								 <strong class="step-name">Exploitation</strong>
+							 </li>
+						</ol>
+						<aside class="notes">
+							Le domaine défini, les oreilles grandes ouvertes, maintenant il faut faire du tri et définir quelle stratégie on met en place pour effectuer une sélection
+						</aside>
+					</section>
+					<section>
+						<h2>	
+							<span class="step-icon">🎚</span><br/>
+							Workflow de tri
+						</h2>
+						<aside class="notes">
+							<p>On cherche à savoir quoi en fait?!</p>
+							<p>Que faire d'un bon article</p>
+							<p>Quel système de tri, combien de niveau, mettre de coté, lire, puis définir la pertinence. Notion d'entonnoir à pertinence.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Pourquoi 🎯 <br/>et quand ⏳ ?</h2>
+						<p class="fragment fade-up">Utilité et temporalité de l'information</p>
+						<aside class="notes">
+							<p>À quoi vont me servir les informations ?</p>
+							<p>Quand vont-elles m'être utile ?</p>
+							<ul>
+								<li>
+									Implémentation directe, je l'utilise directement
+								</li>
+								<li>
+									Implémentation future, je garde cette information de coté pour plus tard
+								</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background="src/veille_today_twitter_0.png" data-background-size="contain">
+						<aside class="notes">
+							Dans les informations utiles, il y a aussi des trucs moins utile ...
+						</aside>
+					</section>
+					<section data-background="src/veille_today_twitter_1.png" data-background-size="contain">
+						<aside class="notes">
+							ChatGPT vous avez testé ?
+						</aside>
+					</section>
+					<section data-background="src/veille_today_gpt3_0.png" data-background-size="contain">
+						<aside class="notes">
+							J'ai testé pour vous
+						</aside>
+					</section>
+					<section data-background="src/veille_today_gpt3_1.png" data-background-size="contain">
+						<aside class="notes">
+							Ça fonctionne aussi en français
+						</aside>
+					</section>
+					<section data-background="src/veille_today_gpt3_2.png" data-background-size="contain">
+						<aside class="notes">
+							Je lui ai demandé comment faire mon cours
+						</aside>
+					</section>
+					<section data-background="src/veille_today_gpt3_3.png" data-background-size="contain">
+						<aside class="notes">
+							Et même questionné mon utilité
+						</aside>
+					</section>
+					<section data-background="src/veille_today_corbeau.jpg" data-background-size="cover">
+						<aside class="notes">
+							Quel petit malin
+						</aside>
+					</section>
+					<!-- <section data-background="src/zufrieden_a_super_cool_teacher_teaching_technological_watch_a8e5d7d1-e6f9-46a1-832e-b518699feddf.PNG" data-background-size="contain">
+						<aside class="notes">
+							Et midjourney, comment il me dessine un super prof de technological watch<br/>
+							le soucis c'est le prompt ... du coup.
+						</aside>
+					</section> -->
+					<section data-background="src/veille_today_gpt3_x.png" data-background-size="contain">
+						<aside class="notes">
+							Dans la newsletter sentier, j'ai aussi lu ça :-) et je trouve très intéressant de bien être sûr de la définition d'intelligence<br/>
+							the thing doesn’t understand anything
+						</aside>
+					</section>
+					<section data-background="src/veille_today_huggingface.png" data-background-size="contain">
+						<aside class="notes">
+							Vous avez la possibilité de comprendre et expérimenter le machine learning et l'IA avec Hugging face. petite démo
+						</aside>
+					</section>					
+					<section data-background="src/veille_today_twitter_2.png" data-background-size="contain">
+						<aside class="notes">
+							Dans les autres sujets (ceux qui m'intéresse pour ma veille sur le CSS)<br/>
+							Un super article "inside a frontend developer"<br/>
+							Un site qui référence des outils
+						</aside>
+					</section>
+					
+					<section data-background="src/veille_2023_masto_reeder_1.png" data-background-size="contain">
+						<aside class="notes">
+							Retour sur l'histoire avec les slides d'IBM<br> et des livres à lire
+						</aside>
+					</section>
+					<section data-background="src/veille_2023_masto_reeder_2.png" data-background-size="contain">
+						<aside class="notes">
+							Via RSS, suivre des blog. La possibilité d'obtenir des opinoions plus personnelles
+						</aside>
+					</section>
+					<section data-background="src/veille_2023_masto_reeder_3.png" data-background-size="contain">
+						<aside class="notes">
+							Via Mastodon, suivre la RTS et voir comment les médias tradi expliquent les nouvelles technologie<br/>
+							Est-ce que quelqu'un connait ce logo ? ICQ
+						</aside>
+					</section>
+					<section data-background="src/veille_2023_masto_reeder_4.png" data-background-size="contain">
+						<aside class="notes">
+							Redécouverte des web components ..<br/>
+							Et rappel de l'histoire du code 418, je ne suis pas une teaypot
+						</aside>
+					</section>
+					<section data-background="src/veille_2023_masto_reeder_5.png" data-background-size="contain">
+						<aside class="notes">
+							Une bonne définition du design
+						</aside>
+					</section>
+					<section data-background="src/veille_today_twitter_3.png" data-background-size="contain">
+						<aside class="notes">
+							Un post qui fait référence à une problématique d'architecture de l'information super passionnante (que l'on a essayé de résoudre pour la confédération, l'epfl et là avec les CFF, on a une autre implémentation)
+							<br/>
+							Une vidéo avec réaction sur "the state of CSS 2022"
+						</aside>
+					</section>
+
+
+					<section data-background="src/veille_twitter_css.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Exemple de tri dans mon flux twitter, en utilisant la fonction like de twitter pour mettre de coté des tweet pertinent pour moi.</p>
+							<p>Un livre à éventuellement commander (en tout cas lire le résumé)</p>
+							<p>Support d'un nouveau selecteur complexe dans Chromium, implémentation future, à garder en tête</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_twitter_lobe.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Identifier dans le bruit (entre Marco Zehe et Thomas Fuchs) un re-tweet de Mike Matas sur le projet Lobe.ai récemment acheté par Microsoft</p>
+						</aside>
+					</section>
+					<section>
+						<h1>⭐️</h1>
+						<aside class="notes">
+							<p>
+								Comment faire le tri, qualifier les informations à garder, à lire, à visionner.
+							</p>
+							<p>Faite confiance à votre instinct, et ça viendra avec la pratique</p>
+						</aside>
+					</section>
+					<section data-background="src/feedly_leo_ai_sort.gif" data-background-size="contain" data-background-color="#ffffff">
+						<aside class="notes">
+							On peut aussi faire confiance à l'algorithme pour faire du tri dans tout ce bruit. Mais il faut aussi, l'entrainer.
+						</aside>
+					</section>
+					
+					<section>
+						<h1>🎛</h1>
+						<h2>Processus</h2>
+						<ol>
+							<li class="fragment fade-up">Premier tri -> Outil de lecture</li>
+							<li class="fragment fade-up">Lecture -> Sélection (long terme, références)</li>
+							<li class="fragment fade-up">Classé pour toujours</li>
+						</ol>
+						<aside class="notes">
+							<h2>Processus dès la sélection</h2>
+							<p>Nombre d'étape de votre processus de sélection</p>	
+							<p>Exemple de mon système personnel, comme pour tous les exemples : chacun doit trouver et affiner son système</p>
+							<ol>
+								<li>Premier tri - via twitter, newsletter, RSS</li>
+								<li>Mise en favoris déclanche l'ajout de l'URL dans Pocket</li>
+								<li>Pocket télécharge en local les 100 derniers liens, je peux ainsi les consulter offline</li>
+								<li>Dans pocket, mise en favoris des meilleurs article + ceux dont j'aurai besoin plus tard</li>
+								<li>Classement sous forme de fichier text/markdown/html sur mon disque dur</li>
+							</ol>	
+						</aside>
+					</section>
+					<section data-background="src/veille_ifttt_1.png" data-background-size="contain">
+						<aside class="notes">
+							IFTTT - Feedly to Pocket
+						</aside>
+					</section>
+					<section data-background="src/veille_ifttt_2.png" data-background-size="contain">
+						<aside class="notes">
+							IFTTT - twitter to Pocket
+						</aside>
+					</section>
+					<section data-background="src/veille_ifttt_3.png" data-background-size="contain">
+						<aside class="notes">
+							IFTTT - Newsletter to Pocket
+						</aside>
+					</section>
+					<section data-background="src/veille_pocket_1.png" data-background-size="contain">
+						<aside class="notes">
+							Pocket, waiting to be read view
+						</aside>
+					</section>
+					
+					<section data-background="src/veille_pocket_2.png" data-background-size="contain">
+						<aside class="notes">
+							Pocket favorites view
+						</aside>
+					</section>
+					<section data-background="src/veille_pocket_3.png" data-background-size="contain">
+						<aside class="notes">
+							Pocket favorites more view
+						</aside>
+					</section>
+					<section data-background="src/veille_today_cubox_0.png" data-background-size="contain">
+						<aside class="notes">
+							Depuis 1 année je test un nouvel outil CUBOX
+						</aside>
+					</section>
+					<section data-background="src/veille_today_cubox_1.png" data-background-size="contain">
+						<aside class="notes">
+							une des feature importante pour moi, la sauvegarde du contenu même si le site meurt
+						</aside>
+					</section>
+					<section data-background="src/veille_2023_cubox_1.png" data-background-size="contain">
+						<aside class="notes">
+						 l'organisation par tag
+						</aside>
+					</section>
+					<section data-background="src/veille_2023_cubox_2.png" data-background-size="contain">
+						<aside class="notes">
+							Voir la version web et la version texte - article super intéressant sur l'AI
+						</aside>
+					</section>
+					<!-- <section data-background="src/veille_2023_cubox_ai_smile.png" data-background-size="contain">
+						<aside class="notes">
+							Un autre sur les sourire
+						</aside>
+					</section>
+					<section data-background="src/veille_2023_cubox_ai_smile_1.png" data-background-size="contain">
+						<aside class="notes">
+							Un autre sur les sourire
+						</aside>
+					</section> -->
+					<section data-background="src/veille_2023_cubox.png" data-background-size="contain">
+						<aside class="notes">
+							Maintenance race
+						</aside>
+					</section>										
+					<section data-background="src/hal_knowledge.png" data-background-size="300px" data-background-color="#282727">
+						<aside class="notes">
+							Exemple de structure de dossier - car vous n'aurez pas que des "ressources web" à ajouter à votre base de connaissance
+						</aside>
+					</section>
+					<section data-background="src/veille_km_1.png" data-background-size="contain">
+						<aside class="notes">
+							Livre en PDF
+						</aside>
+					</section>
+					<section data-background="src/veille_km_2.png" data-background-size="contain">
+						<aside class="notes">
+							Email en PDF
+						</aside>
+					</section>
+					<section data-background="src/veille_km_3.png" data-background-size="contain">
+						<aside class="notes">
+							Photo prise à une conférence
+						</aside>
+					</section>
+				</section>
+
+
+				
+				<!-- ## 🗃Classement -->
+				<!--
+					Classification
+					Taxonomie (tags)
+					Automatisation
+					Outils
+				-->				
+				<section>
+					<section>
+						<ol class="steps">
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎯</span>
+								 <strong class="step-name">Le domaine</strong>
+							 </li>
+							 <li class="fragment shrink">
+								 <span class="step-icon">📡</span>
+								 <strong class="step-name">Système d'écoute</strong>
+							 </li>
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎚</span>
+								 <strong class="step-name">Workflow de tri</strong>
+							 </li>	
+							 <li class="fragment grow">
+								 <span class="step-icon">🗃</span>
+								 <strong class="step-name">Classement</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">⏳</span>
+								 <strong class="step-name">L'épreuve du temps</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">💡</span>
+								 <strong class="step-name">Exploitation</strong>
+							 </li>
+						</ol>
+						<aside class="notes">
+							Le domaine défini, les oreilles grandes ouvertes, maintenant il faut faire du tri et définir quelle stratégie on met en place pour effectuer une sélection
+						</aside>
+					</section>
+					<section>
+						<h2>	
+							<span class="step-icon">🗃</span><br/>
+							Classement
+						</h2>
+						<aside class="notes">
+							<p>Une fois collecté, les informations que l'on désire garder doivent faire l'objet d'un classement.</p>
+							<p>Ce chapitre a déjà été abordé avec le système d'automatisation avec IFTTT</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Category / Tags</h2>
+						<h3>Exclusif / Ouvert</h3>
+						<aside class="notes">
+							<p>Suggestion de 2 modes de classification</p>
+							<p>Exclusif vs Ouvert</p>
+						</aside>
+					</section>
+					<section>
+						<h4>Définition de la taxonomie : Exemple CSS</h4>
+						<table style="font-size:0.8em;margin-top:1em;">
+							<tr class="fragment fade-in">
+								<td width="30%"><strong>Mots-clés</strong></td>
+								<td colspan="2">Layouting, animation, interactivity, UX, accessibility, responsive, print layout, performances, progressive enhancement, graceful degradation, typography, inspiration, visual-experience</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td><strong>Sous-domaines</strong></td>
+								<td colspan="2">
+									Mise en page, interactivité, design systems(styleguide), maintenance, collaboration design/dev
+								</td>
+							</tr>
+							<tr class="fragment fade-in">
+								<td><strong>Catégories</strong></td>
+								<td>
+									<ul>
+										<li>Layout</li>
+										<li>Typography</li>
+										<li>Animation</li>
+										<li>Media</li>
+										<li>Architecture</li>
+										<li>Color</li>
+										<li>Unit</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>
+											Dev
+										</li>
+										<li>
+											Design
+										</li>
+										<li>
+											Architecture
+										</li>
+										<li>
+											History
+										</li>
+									</ul>
+								</td>
+							</tr>			
+						</table>
+						<aside class="notes">
+							<p>En architecture de l'information, la définition d'une taxonomie crée des chapitres ou catégories unique et exclusive.</p>
+							<p>S'il on revient au choix du domaine, les sous-domaine peuvent représenter une catégorisation intéressante</p>
+							<p>Attention cependant à les rendre exclusif, donc : un URL sauvé dans votre système ne peut aller que dans une seule catégorie</p>
+						</aside>
+					</section>
+					<section data-background="src/css_book.jpg" data-background-size="60vmax">
+						<aside class="notes">
+							<p>Observer sur la structure d'un bouquin qui traite spécifiquement de votre domaine, par exemple, quels chapitres sont proposés.</p> 
+						</aside>
+					</section>
+					
+				</section>
+
+				<section>
+					<section>
+						<h1>Site statique</h1>
+					</section>
+					<section>
+						<h2>	
+							<span class="step-icon">🧪</span><br/>
+							Lab
+						</h2>
+					</section>
+					<section>
+						<table style="font-size:0.4em;margin-top:1em;">
+							<tr>
+								<td width="30%">
+									<h4>
+										Livrable attendu
+									</h4>
+								</td>
+								<td>
+									<h3>Blog traitant de votre domaine de veille</h3>
+									<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
+									<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies ainsi que l'explication du choix du SSG</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										90% – contenu
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le domaine est en relation avec votre Ikigai, ainsi que les taxonomies sont expliqués sur une page <strong>À propos</strong>.
+									</p>
+									<p>
+										✅ Les 6 articles sont en relation avec le domaine (dont 1 sur une expérimentation et 1 avec le système et la liste des sources d'écoute).
+									</p>
+									<p>
+										✅ Le contenu des articles cite la/les sources et explique en quoi ils sont intéressants pour vous et votre domaine et à quel moment cela vous sera utile.
+									</p>																				
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										10% – technique, la forme
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le site est static (par exemple, généré avec le SSG de votre choix)
+									</p>
+									<p>
+										✅ Le thème est bien choisi (il correspond au domaine)
+									</p>
+									<p>
+										✅ Le site est hébergé sur github (et se génére via Github Actions)
+									</p>	
+								</td>
+							</tr>							
+						</table>
+					</section>
+					<section data-background="src/veille_static_0.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Un comble pour Antistatique</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_static_1.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Article de 2013 sur les générateurs de site statiques</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_static_2.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Un trend qui prend, pourquoi ?</p>
+						</aside>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment fade-up">Sécurité</li>
+							<li class="fragment fade-up">Performances</li>
+							<li class="fragment fade-up">Resilience</li>
+							<li class="fragment fade-up">Simplicité</li>
+						</ul>
+						<aside class="notes">
+							<p>
+								Sécurité, perf, simplicité car, une fois le site généré, ce soit simplement des fichiers HTML/CSS/JS<br/>
+								Resilience, car une fois le site généré il peut être gardé pour toujours
+							</p>
+							<ul>
+								<li>
+									<a href="https://dev.to/chrisrhymes/why-use-a-static-site-generator-2e53#:~:text=A%20static%20site%20generator%20gives,by%20the%20page%20builder%20tool.">
+										https://dev.to/chrisrhymes/why-use-a-static-site-generator-2e53#:~:text=A%20static%20site%20generator%20gives,by%20the%20page%20builder%20tool.
+									</a>
+								</li>
+								<li>
+									<a href="https://gohugo.io/about/benefits/">
+										https://gohugo.io/about/benefits/
+									</a>
+								</li>
+								<li>
+									<a href="https://dotcms.com/blog/post/the-resurgence-of-static">
+										https://dotcms.com/blog/post/the-resurgence-of-static
+									</a>
+								</li>
+								<li>
+									<a href="https://jamstack.org/generators/hugo/">
+										https://jamstack.org/generators/hugo/
+									</a>
+								</li>
+							</ul>							
+						</aside>
+					</section>
+					<section data-background="src/veille_lab_hugo_4.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Utilisation de HUGO.</p>
+							<p>Qui a déjà entendu parlé ?</p>
+							<p>Langage Go, conçu pour la rapidité</p>
+						</aside>
+					</section>
+					<section data-background="src/veille_go.png" data-background-size="contain">
+						<aside class="notes">
+							GoLang
+						</aside>
+					</section>
+					<section data-background="src/veille_hugo_features.png" data-background-size="contain">
+						<aside class="notes">
+							features
+						</aside>
+					</section>
+					<section data-background="src/veille_lab_hugo_3.png" data-background-size="contain">
+						<aside class="notes">
+							Pourquoi vous imposer HUGO ?<br/>
+							Pour vous faire découvrir un nouvel environnement, celui de Golang<br/>
+							Parce que la documentation est bien faite.
+						</aside>
+					</section>
+					<section data-background="src/veille_lab_hugo_1.png" data-background-size="contain">
+						<aside class="notes">
+							Parce que c'est rapide, à tel point que vous n'aurez plus envie d'utiliser les solutions en JavaScript :-P<br/>
+						</aside>
+					</section>
+					<section data-background="src/veille_lab_hugo_2.png" data-background-size="contain">
+						<aside class="notes">
+							C'est parti !
+						</aside>
+					</section>
+					<section>
+						<pre><code data-line-numbers="2-3|4|5|9|10|11">
+monsite/
+├── archetypes/
+│   └── default.md
+├── assets/
+├── content/
+├── data/
+├── layouts/
+├── public/
+├── static/
+├── themes/
+└── config.toml
+						</code></pre>								
+					</section>
+					<section>
+						<pre><code data-line-numbers="1|2|4-17">➜  zufrieden git:(source) hugo
+Start building sites … 
+
+                   |  EN   
+-------------------+-------
+  Pages            | 2869  
+  Paginator pages  |   26  
+  Non-page files   |   90  
+  Static files     |   69  
+  Processed images |    0  
+  Aliases          |    1  
+  Sitemaps         |    1  
+  Cleaned          |    0  
+
+Total in 860 ms </code></pre>							
+					</section>
+					<section>
+						<pre><code data-line-numbers="1|2|3-6">➜  zufrieden git:(source) hugo serve
+Start building sites … 
+					
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop</code></pre>							
+					</section>
+					<section data-background-image="src/hugo_new_site.gif" data-background-size="contain" data-background-color="white">
+						<aside class="notes">
+							Créer un site avec hugo, une seule ligne
+						</aside>
+					</section>
+					<section data-background-image="src/hugo_themes.png" data-background-size="contain">
+						<aside class="notes">
+							Choisir un thème, comment choisir :-)
+						</aside>
+					</section>
+					<section data-background-image="src/wrong-font.jpeg" data-background-size="cover">
+						<h2><mark>Cohérence avec votre domaine</mark></h2>
+						<aside class="notes">
+							Choisissez un thème qui correspond à votre domaine !
+						</aside>
+					</section>
+					<section>
+						<h2>Comment choisir un outil/logiciel/framework/CMS/theme ?</h2>
+						<aside class="notes">
+							Quels sont les critères pour choisir le bon thème Hugo ?<br/>
+						</aside>
+					</section>
+					<section>
+						<ol class="steps">
+							<li class="fragment fade-up">
+								<span class="step-icon">🥰</span>
+								<strong class="step-name">Communauté</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">💉</span>
+								<strong class="step-name">Dépendances</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🎨</span>
+								<strong class="step-name">Design</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🚢</span>
+								<strong class="step-name">Quantité de code</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">📟</span>
+								<strong class="step-name">Derniers commit</strong>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<div class="r-stack">
+						<img src="src/hugo_theme_choose_1.png"   />
+						<img src="src/hugo_theme_choose_2.png"  class="fragment fade-up" />
+						<img src="src/hugo_theme_choose_3.png"  class="fragment fade-up" />
+						<img src="src/hugo_theme_choose_4.png"  class="fragment fade-up" />
+						<img src="src/hugo_theme_choose_5.png"  class="fragment fade-up" />
+						<img src="src/hugo_theme_choose_6.png"  class="fragment fade-in" />
+						</div>
+						<aside class="notes">
+							Il manque un truc ???
+						</aside>
+					</section>
+					<section>
+						<h1>🚧</h1>
+						<h2>Exercice pratique nº5</h2>
+						<ul>
+							<li>
+								Choisir un <mark>SSG</mark>
+							</li>
+							<li>
+								Créer un repository sur github : <mark>labveilletech</mark>
+							</li>
+							<li>
+								Installer votre outil SSG, créer le site labveilletech <code>MonSSG new site labveilletech</code>
+							</li>
+							<li>
+								Bien choisir un thème et l'installer
+							</li>
+							<li>
+								Créer votre page <mark>A propos</mark>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Hosting GitHub</h2>
+						<p>
+							Documentation complète 
+							<a href="https://pages.github.com/">pages.github.com</a>
+						</p>							
+					</section>
+					<section data-background-image="src/veille_github_actions_1.png" data-background-size="contain">
+						<aside class="notes"></aside>
+					</section>
+					<section data-background-image="src/veille_github_actions_2.png" data-background-size="contain">
+						<aside class="notes"></aside>
+					</section>
+					<section data-background-image="src/veille_github_actions_3.png" data-background-size="contain">
+						<aside class="notes"></aside>
+					</section>
+					<section data-background-image="src/veille_github_actions_4.png" data-background-size="contain">
+						<aside class="notes"></aside>
+					</section>
+					<section>
+						<h3>Actions Hugo</h3>
+						<p>
+							<a href="https://github.com/peaceiris/actions-hugo">github.com/peaceiris/actions-hugo</a>	
+						</p>
+						<p>
+							<mark>
+								.github/workflows/gh-pages.yml
+							</mark>
+						</p>
+					</section>					
+					<section>
+						<pre><code>
+name: github pages
+
+on:
+  push:
+	branches:
+	  - main  # Set a branch to deploy
+
+...
+						</code></pre>
+					</section>
+				<section>
+					<pre><code>
+...
+
+jobs:
+	deploy:
+		runs-on: ubuntu-18.04
+		steps:
+			- uses: actions/checkout@v2
+				with:
+				  submodules: true 
+				  fetch-depth: 0
+
+			- name: Setup Hugo
+				uses: peaceiris/actions-hugo@v2
+				with:
+					hugo-version: 'latest'
+
+...
+					</code></pre>
+				</section>
+				<section>
+					<pre><code>
+...
+
+- name: Build
+	run: hugo --minify
+
+- name: Deploy
+	uses: peaceiris/actions-gh-pages@v3
+	with:
+		github_token: ${{ secrets.GITHUB_TOKEN }}
+		publish_dir: ./public%  
+					</code></pre>
+				</section>							
+				</section>
+
+				<!-- ## ⏳L'épreuve du temps -->
+				<!-- 
+					Résilience
+					Courbe de la Hype
+					notion de "tout va trop vite" 
+				 -->
+				<section>
+					<section>
+						<h1>Welcome back<sup>4/5</sup></h1>
+						<h2>Vive la neige 🌨️</h2>
+					</section>
+					<section>
+						<h2>Au menu 👨🏻‍🍳</h2>
+						<ol class="steps">
+							<li class="fragment fade-up">
+								<span class="step-icon">⏳ <span style="font-size:40%">et</span> 💡</span>
+								<strong class="step-name">Théorie</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">✍️</span>
+								<strong class="step-name">Articles</strong>
+							</li>
+							<!-- <li class="fragment fade-up">
+								<span class="step-icon">🌏</span>
+								<strong class="step-name">Déployer</strong>
+							</li> -->
+						</ol>
+						<aside class="notes">
+							Nous allons voir la théorie de l'épreuve du temps et l'experimentation/exploitation de la veille !<br/>
+							Finaliser installation et configuration du SSG pour générer votre site web<br/>
+							Le déployer gratuitement sur Github pages<br/>
+							Et vous laisser du temps pour commencer/continuer la rédaction des articles
+						</aside>
+					</section>
+					<section>
+						<table style="font-size:0.4em;margin-top:1em;">
+						<tr>
+							<td width="30%">
+								<h4>
+									Livrable attendu
+								</h4>
+							</td>
+							<td>
+								<h3>Blog traitant de votre domaine de veille</h3>
+								<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
+								<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies ainsi que l'explication du choix du SSG</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									90% – contenu
+								</h4>
+							</td>
+							<td>
+								<p>
+									✅ Le domaine est en relation avec votre Ikigai, ainsi que les taxonomies sont expliqués sur une page <strong>À propos</strong>.
+								</p>
+								<p>
+									✅ Les 6 articles sont en relation avec le domaine (dont 1 sur une expérimentation et 1 avec le système et la liste des sources d'écoute).
+								</p>
+								<p>
+									✅ Le contenu des articles cite la/les sources et explique en quoi ils sont intéressants pour vous et votre domaine et à quel moment cela vous sera utile.
+								</p>																				
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									10% – technique, la forme
+								</h4>
+							</td>
+							<td>
+								<p>
+									✅ Le site est généré avec le SSG de votre choix
+								</p>
+								<p>
+									✅ Le thème est bien choisi (il correspond au domaine)
+								</p>
+								<p>
+									✅ Le site est hébergé sur github et se génére via Github Actions
+								</p>	
+							</td>
+						</tr>							
+					</table>
+						<aside class="notes">
+							On aura l'occasion d'en reparler (je vous recommuniquerais ce tableau)<br/>
+							L'évaluation du cours me permet de voir si l'objectif est atteint. J'insiste sur : <br/>
+							- Je veux être bien sûr que c'est le domaine qui vous intéresse<br/>
+							- Je serai disponible pour en discuter si vous avez de la peine à en trouver un ou le définir<br/>
+							- Je m'intéresse au contenu mais surtout comment vous l'aurez trouvé et ce que vous en avez apprit <br/>
+							- Je veux aussi savoir pourquoi vous avez choisi celui-ci<br/>
+							- Peu de points sur la technique (Vous ne serez pas tous des développeurs, mais vous devez comprendre ce qui est en jeu).
+						</aside>
+					</section>	
+					<section>
+						<style>							
+							.tree {
+							  /* margin: 18px; */
+							  padding: 0;
+							  font-size:70%;
+							}
+							.tree:not(:empty):before, .tree:not(:empty):after,
+							.tree ul:not(:empty):before, .tree ul:not(:empty):after,
+							.tree li:not(:empty):before, .tree li:not(:empty):after {
+							  display: block;
+							  position: absolute;
+							  content: "";
+							}
+							.tree ul, .tree li {
+							  position: relative;
+							  margin: 0;
+							  padding: 0;
+							}
+							.tree li {
+							  list-style: none;
+							}
+							.tree li > div {
+							  background-color: #ffffff55;
+							  /* color: #222; */
+							  padding: 5px;
+							  display: inline-block;
+							}
+							.tree.horizontal li {
+							  display: flex;
+							  align-items: center;
+							  margin-left: 24px;
+							}
+							.tree.horizontal li div {
+							  margin: 6px 0;
+							}
+							.tree.horizontal li:before {
+							  border-left: 1px solid #ddd;
+							  height: 100%;
+							  width: 0;
+							  top: 0;
+							  left: -12px;
+							}
+							.tree.horizontal li:first-child:before {
+							  height: 50%;
+							  top: 50%;
+							}
+							.tree.horizontal li:last-child:before {
+							  height: 50%;
+							  bottom: 50%;
+							  top: auto;
+							}
+							.tree.horizontal li:after, .tree.horizontal li ul:after {
+							  border-top: 1px solid #ddd;
+							  height: 0;
+							  width: 12px;
+							  top: 50%;
+							  left: -12px;
+							}
+							.tree.horizontal li:only-child:before {
+							  content: none;
+							}
+							.tree.horizontal li ul:after {
+							  left: 0;
+							}
+							.tree.horizontal > li:only-child {
+							  margin-left: 0;
+							}
+							.tree.horizontal > li:only-child:before, .tree.horizontal > li:only-child:after {
+							  content: none;
+							}
+							
+						</style>
+						<ul class="tree horizontal">
+							<li>
+								<div>Site Lab Veille Tech</div>	
+								<ul>
+									<li><div>Accueil</div></li>
+									<li><div>Articles</div>
+										<ul>
+											<li><div>Article 0 - Mon système de veille, mes abonnements, ma routine</div></li>
+											<li><div>Article 1</div></li>
+											<li><div>Article 2</div></li>
+											<li><div>Article 3</div></li>
+											<li><div>Article 4</div></li>
+											<li><div>Article 5 - Basé sur une expérimentation (Sera traité au prochain cours)</div></li>
+										</ul>
+									</li>
+									<li><div>À propos (Ikigai, domaine, à propos de moi, comment j'ai fait ce site)</div></li>									
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>									
+				<section>
+					<section>
+						<ol class="steps">
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎯</span>
+								 <strong class="step-name">Le domaine</strong>
+							 </li>
+							 <li class="fragment shrink">
+								 <span class="step-icon">📡</span>
+								 <strong class="step-name">Système d'écoute</strong>
+							 </li>
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎚</span>
+								 <strong class="step-name">Workflow de tri</strong>
+							 </li>	
+							 <li class="fragment shrink">
+								 <span class="step-icon">🗃</span>
+								 <strong class="step-name">Classement</strong>
+							 </li>
+							 <li class="fragment grow">
+								 <span class="step-icon">⏳</span>
+								 <strong class="step-name">L'épreuve du temps</strong>
+							 </li>
+							 <li class="">
+								 <span class="step-icon">💡</span>
+								 <strong class="step-name">Exploitation</strong>
+							 </li>
+						</ol>
+						<aside class="notes">
+							L'épreuve du temps, c'est la partie la plus philosophique du cours ;-)
+						</aside>
+					</section>					
+					<section>
+						<h2>	
+							<span class="step-icon">⏳</span><br/>
+							L'épreuve du temps
+						</h2>
+						<aside class="notes">
+							<p>Comment la veille peut nous aider à voyager dans le temps.</p>
+							<p>Se projeter dans les futures possibles</p>
+						</aside>
+					</section>
+					<section data-background-image="src/executel_2.jpeg" data-background-size="contain">
+						<aside class="notes">
+							<p>Cet écran doit vous paraitre familier</p>
+							<p>Quelles informations vous sont données sur cet écran ?</p>
+							<p>Mois, année, jours courant, jour de la semaine, jour avec rdv vs jour sans rdv</p>
+						</aside>
+					</section>
+					<section data-background-image="src/executel_1.jpeg" data-background-size="contain">
+						<aside class="notes">
+							<p>Quelles informations vous sont données sur cet écran ?</p>
+							<p>Mois, année, jours courant, jour de la semaine, jour avec rdv vs jour sans rdv, numéro de semaine de l'année</p>
+							<p>répartition des rdv dans la journée !</p>
+						</aside>
+					</section>
+					<section data-background-image="src/executel_3.jpeg" data-background-size="contain">
+						<h1 class="fragment fade-up" style="background-color:hsla(202, 85%, 4%, 0.8); display: inline; padding:0 0.1em;">1984</h1>
+						<aside class="notes">
+							<p>Un des ancêtre du smartphone - The Executel</p>
+							<p>Source https://www.youtube.com/watch?v=6QB0OinQkgA</p>
+						</aside>
+					</section>		
+					<section>
+						<h3>Des courbes à retenir 📈📉</h3>
+					</section>			
+					<section>
+						<svg width="100%" height="auto" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<title>Courbe de la diffusion des innovations</title>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="Artboard">
+									<path d="M37,904 L37,858.834746 L51.8076328,858.661359 C536.97379,847.256234 678.682924,277 961,277 L960.000017,277.020043 C960.000011,277.013362 960.000006,277.006681 960,277 L960.5,277.01 L961,277 C960.999994,277.006681 960.999989,277.013362 960.999983,277.020043 L960,277 C1242.31708,277 1384.02621,847.256234 1869.19237,858.661359 L1884,858.834746 L1884,904 L37,904 Z" id="Combined-Shape" fill="#b300f9"></path>
+									<line x1="324.5" y1="799.5" x2="324.5" y2="891.334416" id="Line" stroke="#f7ece6" stroke-width="3" stroke-linecap="round"></line>
+									<line x1="632.5" y1="522.5" x2="632.5" y2="891.335118" id="Line" stroke="#f7ece6" stroke-width="3" stroke-linecap="round"></line>
+									<line x1="940.5" y1="289.5" x2="940.5" y2="892.335409" id="Line" stroke="#f7ece6" stroke-width="3" stroke-linecap="round"></line>
+									<line x1="1250.5" y1="480.5" x2="1250.5" y2="888.335456" id="Line" stroke="#f7ece6" stroke-width="3" stroke-linecap="round"></line>
+									<text id="34%-Early-majority" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="763.482422" y="617">34%</tspan>
+										<tspan x="811.517578" y="617" font-family="Helvetica" font-weight="normal"> </tspan>
+										<tspan x="760.160156" y="646" font-family="Helvetica" font-weight="normal">Early</tspan>
+										<tspan x="745.494141" y="675" font-family="Helvetica" font-weight="normal">majority</tspan>
+									</text>
+									<text id="34%-Late-majority" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="1073.48242" y="603">34%</tspan>
+										<tspan x="1121.51758" y="603" font-family="Helvetica" font-weight="normal"> </tspan>
+										<tspan x="1074.14453" y="632" font-family="Helvetica" font-weight="normal">Late</tspan>
+										<tspan x="1055.49414" y="661" font-family="Helvetica" font-weight="normal">majority</tspan>
+									</text>
+									<text id="16%-Laggards" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="1376.48242" y="770">16%</tspan>
+										<tspan x="1424.51758" y="770" font-family="Helvetica" font-weight="normal"> </tspan>
+										<tspan x="1350.46094" y="799" font-family="Helvetica" font-weight="normal">Laggards</tspan>
+									</text>
+									<text id="13.5%-Early-adopters" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="439.474609" y="773">13.5%</tspan>
+										<tspan x="507.525391" y="773" font-family="Helvetica" font-weight="normal"> </tspan>
+										<tspan x="446.160156" y="802" font-family="Helvetica" font-weight="normal">Early</tspan>
+										<tspan x="426.800781" y="831" font-family="Helvetica" font-weight="normal">adopters</tspan>
+									</text>
+									<text id="2.5%-Innovators" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="92.78125" y="888">2.5%</tspan>
+										<tspan x="147.484375" y="888" font-family="Helvetica" font-weight="normal"> Innovators</tspan>
+									</text>
+								</g>
+							</g>
+						</svg>
+						<aside class="notes">
+							Courbe de la diffusion des innovations selon Everett Rogers (publié en 1962)
+						</aside>
+					</section>
+					<section>
+						<h3>jQuery</h3>
+						<pre>
+						<code data-trim data-noescape>
+$('body').append($('&#60;p&#62;'))
+	</code>
+	</pre>
+	<h3>Vanilla</h3>
+	<pre>
+	<code data-trim data-noescape>
+document.body.appendChild(document.createElement('p'))
+						</code>
+						</pre>
+						<aside class="notes">
+							Par exemple jQuery, c'est fini. On est d'accord.
+							<p style="color:red;">@push - jQuery to Vanilla JS - https://github.com/pablorgarcia/vanilla-js-vs-jquery_tutorial-example</p>
+						</aside>
+					</section>
+					<section data-background-image="src/jquery_2022_lol.png" data-background-size="contain">
+						<aside class="notes">
+							Selon l'almanac 2022 (qui vient de sortir) 81% des pages web charge jQuery
+							<p style="color:red;">@push - almanac web 2022 - https://almanac.httparchive.org/en/2022/javascript</p>
+						</aside>
+					</section>
+					<section data-background-image="src/almanac_2023_third_party.png" data-background-size="contain">
+						<aside class="notes">
+							Vous avez déjà entendu parler de l'Almanac du web ?
+							<p style="color:red;">@push - almanac web 2022 - https://almanac.httparchive.org/en/2022/javascript</p>
+						</aside>
+					</section>					
+					<section>
+						<svg width="100%" height="auto" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<title>Courbe de la diffusion des innovations</title>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="Artboard">
+									<path d="M37,904 L37,858.834746 L51.8076328,858.661359 C536.97379,847.256234 678.682924,277 961,277 L960.000017,277.020043 C960.000011,277.013362 960.000006,277.006681 960,277 L960.5,277.01 L961,277 C960.999994,277.006681 960.999989,277.013362 960.999983,277.020043 L960,277 C1242.31708,277 1384.02621,847.256234 1869.19237,858.661359 L1884,858.834746 L1884,904 L37,904 Z" id="Combined-Shape" fill="#b300f9"></path>
+									<line x1="324.5" y1="799.5" x2="324.5" y2="891.334416" id="Line" stroke="#f7ece6" stroke-width="3" stroke-linecap="round"></line>
+									<line x1="632.5" y1="522.5" x2="632.5" y2="891.335118" id="Line" stroke="#f7ece6" stroke-width="3" stroke-linecap="round"></line>
+									<line x1="940.5" y1="289.5" x2="940.5" y2="892.335409" id="Line" stroke="#f7ece6" stroke-width="3" stroke-linecap="round"></line>
+									<line x1="1250.5" y1="480.5" x2="1250.5" y2="888.335456" id="Line" stroke="#f7ece6" stroke-width="3" stroke-linecap="round"></line>
+									<text id="34%-Early-majority" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="763.482422" y="617">34%</tspan>
+										<tspan x="811.517578" y="617" font-family="Helvetica" font-weight="normal"> </tspan>
+										<tspan x="760.160156" y="646" font-family="Helvetica" font-weight="normal">Early</tspan>
+										<tspan x="745.494141" y="675" font-family="Helvetica" font-weight="normal">majority</tspan>
+									</text>
+									<text id="34%-Late-majority" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="1073.48242" y="603">34%</tspan>
+										<tspan x="1121.51758" y="603" font-family="Helvetica" font-weight="normal"> </tspan>
+										<tspan x="1074.14453" y="632" font-family="Helvetica" font-weight="normal">Late</tspan>
+										<tspan x="1055.49414" y="661" font-family="Helvetica" font-weight="normal">majority</tspan>
+									</text>
+									<text id="16%-Laggards" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="1376.48242" y="770">16%</tspan>
+										<tspan x="1424.51758" y="770" font-family="Helvetica" font-weight="normal"> </tspan>
+										<tspan x="1350.46094" y="799" font-family="Helvetica" font-weight="normal">Laggards</tspan>
+									</text>
+									<text id="13.5%-Early-adopters" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="439.474609" y="773">13.5%</tspan>
+										<tspan x="507.525391" y="773" font-family="Helvetica" font-weight="normal"> </tspan>
+										<tspan x="446.160156" y="802" font-family="Helvetica" font-weight="normal">Early</tspan>
+										<tspan x="426.800781" y="831" font-family="Helvetica" font-weight="normal">adopters</tspan>
+									</text>
+									<text id="2.5%-Innovators" font-family="Helvetica-Bold, Helvetica" font-size="26" font-weight="bold" fill="#f7ece6">
+										<tspan x="92.78125" y="888">2.5%</tspan>
+										<tspan x="147.484375" y="888" font-family="Helvetica" font-weight="normal"> Innovators</tspan>
+									</text>
+								</g>
+							</g>
+						</svg>
+						<aside class="notes">
+							Courbe de la diffusion des innovations selon Everett Rogers (publié en 1962)
+						</aside>
+					</section>					
+					<section>
+						<svg width="100%" height="auto" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<title>Courbe de la hype</title>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="Artboard-Copy">
+									<path d="M279.925781,925 C543.195313,672.609375 474.695313,257.472656 591.792969,257.472656 C708.890625,257.472656 694.167969,783.484375 811.128906,783.484375 C928.089844,783.484375 961.179688,580.675781 1674,572.59375" id="Path-2" stroke="#3187ff" stroke-width="25"></path>
+									<text id="Attentes" font-family="Helvetica-Bold, Helvetica" font-size="34" font-weight="bold" fill="#ffffffcc">
+										<tspan x="143.491699" y="187">Attentes</tspan>
+									</text>
+									<text id="Sur-estimation" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#ffffffcc">
+										<tspan x="76.4882812" y="375">Sur-estimation</tspan>
+									</text>
+									<text id="Percée" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#ffffffcc">
+										<tspan x="346.130859" y="969">Percée</tspan>
+									</text>
+									<text id="Espérances" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#ffffffcc">
+										<tspan x="522.123047" y="969">Espérances</tspan>
+									</text>
+									<text id="Désillusion" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#ffffffcc">
+										<tspan x="747.486328" y="969">Désillusion</tspan>
+									</text>
+									<text id="Eclaircissement" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#ffffffcc">
+										<tspan x="1034.11133" y="969">Eclaircissement</tspan>
+									</text>
+									<text id="Productivité" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#ffffffcc">
+										<tspan x="1390.1543" y="969">Productivité</tspan>
+									</text>
+									<text id="Sous-estimation" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#ffffffcc">
+										<tspan x="67.1542969" y="758">Sous-estimation</tspan>
+									</text>
+									<text id="Estimation-Correcte" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#ffffffcc">
+										<tspan x="99.1582031" y="580">Estimation</tspan>
+										<tspan x="111.146484" y="609">Correcte</tspan>
+									</text>
+									<text id="Temps" font-family="Helvetica-Bold, Helvetica" font-size="34" font-weight="bold" fill="#ffffffcc">
+										<tspan x="1619.20654" y="994">Temps</tspan>
+									</text>
+									<path id="Line" d="M279.5,204 L304,253 L284,253 L284.000609,901.412481 C295.253566,903.501829 303.805194,913.282209 303.996718,925.094848 L304,925.5 C304,939.030976 293.030976,950 279.5,950 C265.969024,950 255,939.030976 255,925.5 C255,913.506058 263.618538,903.525083 275.000394,901.412295 L275,253 L255,253 L279.5,204 Z" fill="#fff" fill-rule="nonzero"></path>
+									<path id="Line" d="M1626,901 L1675,925.5 L1626,950 L1626,930 L303.587519,930.000609 C301.498171,941.253566 291.717791,949.805194 279.905152,949.996718 L279.5,950 C265.969024,950 255,939.030976 255,925.5 C255,911.969024 265.969024,901 279.5,901 C291.493942,901 301.474917,909.618538 303.587705,921.000394 L1626,921 L1626,901 Z" fill="#fff" fill-rule="nonzero"></path>
+									<line x1="490.5" y1="208.5" x2="490.5" y2="920.5" id="Line-2" stroke="#ffffffcc" stroke-width="3" stroke-linecap="square" stroke-dasharray="0,20"></line>
+									<line x1="945" y1="208.5" x2="945" y2="920.5" id="Line-2-Copy-2" stroke="#ffffffcc" stroke-width="3" stroke-linecap="square" stroke-dasharray="0,20"></line>
+									<line x1="1291" y1="208.5" x2="1291" y2="920.5" id="Line-2-Copy-3" stroke="#ffffffcc" stroke-width="3" stroke-linecap="square" stroke-dasharray="0,20"></line>
+									<rect id="Rectangle" fill-opacity="0.1" fill="#ffffff" x="280" y="205" width="1395" height="314"></rect>
+									<rect id="Rectangle" fill-opacity="0.1" fill="#ffffff" x="280" y="662" width="1395" height="261"></rect>
+									<line x1="694" y1="208.5" x2="694" y2="920.5" id="Line-2-Copy" stroke="#052A3F" stroke-width="3" stroke-linecap="square" stroke-dasharray="0,20"></line>
+								</g>
+							</g>
+						</svg>
+						<aside class="notes">
+							Courbe de la hype
+						</aside>
+					</section>
+					<section>
+						<div class="r-stack">
+						<img src="src/hype_semantic_0.png"   style=" border:50px solid white;"/>
+						<img src="src/hype_semantic_1.jpg"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_semantic_2.jpg"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_semantic_4.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						</div>
+						<aside class="notes">
+							Intéressant de regarder l'évolution face aux prédictions<br/>
+							2001, 2006, 2012, 2015<br/>
+						<p style="color:red;">@push – La semantic web, état des lieux de son évolution, des promesses etc. https://medium.com/@schivmeister/the-semantic-web-where-is-it-now-f4773f3097e3</p>
+						<p style="color:red;">@push – web3, Web2.0, non, le web n'a pas de version https://hidde.blog/the-web-doesnt-have-version-numbers/</p>
+						</aside>
+					</section>
+					
+					<section data-background-image="src/veille_2023_schema_event_5.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_4.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_3.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_1.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_2.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_0.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					
+					<section>
+						<div class="r-stack">	
+						<img src="src/hype_blockchain_web3.jpg" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_ai_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_web3_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_db_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						</div>
+						<aside class="notes">
+							Web3 ?<br/>
+							Blockchain ?<br/>
+							AI ?<br/>
+						</aside>
+					</section>					
+					<section data-background-color="white" data-background-image="src/layer_of_the_web_1.png" data-background-size="contain">
+			
+						<aside class="notes">
+							Pace Layer
+							From : https://speaking.adactio.com/ZCJ61M The layer of the web
+						</aside>
+					</section>
+					<section data-background-color="white" data-background-image="src/layer_of_the_web_2.png" data-background-size="contain">
+					
+						<aside class="notes">
+							Pace Layer
+							From : https://speaking.adactio.com/ZCJ61M The layer of the web
+							<p style="color:red;">@push - Talk à regarder plusieurs fois, les couches du web par Jeremy Keith "The Layers Of The Web" https://speaking.adactio.com/ZCJ61M</p>
+						</aside>
+					</section>
+
+					<section>
+						<h3>⌛️ A quel moment ça s'arrête ?</h3>
+						<aside class="notes">
+							A quel moment une technologie est définie assez "bonne" pour que les évolutions ne soient plus "utiles"
+						</aside>
+					</section>
+					<section>
+						<div class="r-stack">
+						<img src="src/w100.016.jpg" class="fragment fade-up">
+						<img src="src/w100.017.jpg" class="fragment fade-up">
+						<img src="src/w100.019.jpg" class="fragment fade-up">
+						<img src="src/w100.020.jpg" class="fragment fade-up">
+						<img src="src/w100.024.jpg" class="fragment fade-up">
+						<img src="src/w100.009.jpg" class="fragment fade-up">
+						<img src="src/w100.010.jpg" class="fragment fade-up">
+						<img src="src/w100.027.jpg" class="fragment fade-up">
+						<img src="src/boomclouds16x9v2.jpg" class="fragment fade-up">
+						</div>
+						<aside class="notes">
+							
+							<ul>
+								<li>1920 - 14 passagers 240km/h</li>
+								<li>1930 - DC-3 - 30 passagers 530km/h</li>
+								<li>1940 - Stratocruiser - cabine pressurisée - 770km/h</li>
+								<li>1950 - Boeing 707 - Jet Age - 1000km/h</li>
+								<li>2015 - Boeing 787 - same-same ... what happend to the futur ?</li>
+								<li>FIN 60 - The 747 was meant to be a stopgap. It was supposed to serve the airlines until the SST entered service in the 1970's, at which point it would be demoted to a freighter.</li>
+								<li>In fact, that famous hump on the 747 is there specifically to make it easier to load freight. This was not a plane with a glamorous future.</li>
+								<li>On a bien eu le concorde .... mais la pollution, le bruit, le prix, la maintenance de ces appareils pour gagner 2h entre paris/nyc ... </li>
+								<li>2022, retour du projet. American Airline en a commandé 10, les avions Denver Boom Supersonic (1.7 Mach)</li>
+								<li>Equilibre innovation / utilité</li>
+							</ul>
+							Maciej Ceglowski
+							<p style="color:red;">@push - Super important talk from Maciej Ceglowski about Web Design: The First 100 Years - https://idlewords.com/talks/web_design_first_100_years.htm</p>
+							
+							
+						</aside>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td><h4>1970</h4></td>
+								<td>UNIX 🔑</td>
+							</tr>
+							<tr>
+								<td><h4>1974</h4></td>
+								<td>TCP/IP 🔌</td>
+							</tr>
+							<tr>
+								<td><h4>1991</h4></td>
+								<td>HTTP 📋</td>
+							</tr>
+							<tr>
+								<td><h4>1961</h4></td>
+								<td>EMAIL 💌</td>
+							</tr>
+							<tr>
+								<td><h4>1867</h4></td>
+								<td>KEYBOARD ⌨️</td>
+							</tr>
+							<tr>
+								<td><h4>1964</h4></td>
+								<td>FLATSCREEN 🖥</td>
+							</tr>
+							<tr>
+								<td><h4>1976</h4></td>
+								<td>INTEL 8086 🔳</td>
+							</tr>
+						</table>
+						<aside class="notes">
+							This contempt for the past also ignores the reality of our industry, which is that we work almost exclusively with legacy technologies.
+						</aside>
+					</section>
+					<section>
+						<blockquote>
+							<p>The idea that something might work fine the way it is has no place in tech culture.</p>
+							<cite>
+								~ Maciej Ceglowski
+							</cite>
+						</blockquote>
+					</section>
+					<section data-background-image="src/vox.png" data-background-color="#000000">
+						<h2>
+							Evolution vs progress
+						</h2>
+						<aside class="notes">
+							<p>Evolution is a terrible metaphor for technology</p>
+							<p>Comme si le metaverse était inévitable</p>
+							<p>We can’t go back, they say. We can’t stop the “natural evolution of technology.” But the “natural evolution of technology” was never a thing to begin with, and it’s time to question what “progress” actually means.</p>
+							source : 
+							<p style="color:red;">@push - L'évolution naturelle des technologies, n'est pas une fatalité. Il est temps de questionner ce que signifie le "progrès" https://www.vox.com/the-highlight/2019/10/1/20887003/tech-technology-evolution-natural-inevitable-ethics</p>
+						</aside>
+					</section>
+					<section data-background-image="src/cookie.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Toujours se poser la question, pourquoi cette invention ? À quoi sert ce framework ? </p>
+							<p>Pourquoi a-t-on crée les cookies ?</p>
+							<p>
+								The easiest way around this limitation would have been to give each web browser some kind of unique identifier that they would use while exploring the Web, but to Montulli and his colleagues, that seemed too problematic in terms of user privacy. With one single ID, sites would effectively be able to compare notes to track your browsing history around the Web. 
+							</p>
+							<p style="color:red;">@push - L'origine des cookies https://hiddenheroes.netguru.com/lou-montulli</p>
+						</aside>
+					</section>
+					
+					<section data-background-image="src/uncle_bob_software_programmer_double_2.png" data-background-size="contain">
+						<aside class="notes">
+							<p style="color:red;">@push Comment nous en sommes arrivé là dans le monde de l'IT, et quel est le futur de notre profession - "Uncle" Bob Martin - "The Future of Programming" - https://www.youtube.com/watch?v=ecIWPzGEbFc</p>
+							<!-- le futur c'est de devenir responsable -->
+						</aside>
+					</section>
+					<section data-background-image="src/prediction.jpg" data-background-size="contain">
+						<aside class="notes">
+							<p>Que peut-on apprendre des visions passées du futur</p>
+							<p>Vision du futur avec les connaissances/outils de l'époque</p>
+						</aside>
+					</section>
+					<section data-background-image="src/near_future.png" data-background-size="contain">
+						<aside class="notes">
+							<p>Exemple d'exploration des tendances et usages du futur</p>
+							<p>Le laboratoire Near Future : Catalogue IKEA pour imaginer, tester une version du futur avec nos idées actuelles</p>
+							
+						</aside>
+					</section>
+					<section>
+						<h2>
+							<span class="step-icon">🔮</span><br/>
+							Prédire et qualifier l'utilité des informations
+						</h2>
+						<aside class="notes">
+							<p>Arriver à qualifier, une information et se poser les questions :</p>
+							<ul>
+								<li>Quand ce sera utile ?</li>
+								<li>À qui et pourquoi ?</li>
+								<li>Où en est-on dans la courbe du hype et dans la coubre de la diffusion des innovations</li>
+								<li>Est-ce qu'on a atteint un plafond, plus ce ne sera pas mieux.</li>
+							</ul>
+						</aside>
+					</section>
+							
+				</section>
+				
+				<!-- ## 💡Exploitation -->
+				<!-- Expérimenter, retrouver l'information -->
+				<section>
+					<section>
+						<h1>Welcome back</h1>
+						<h2>Dernier cours 😱</h2>
+					</section>
+					<section>
+						<h2>Au menu 👨🏻‍🍳</h2>
+						<ol class="steps">
+							<li class="fragment fade-up">
+								<span class="step-icon">💡</span>
+								<strong class="step-name">Théorie</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🌏</span>
+								<strong class="step-name">Déployer</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">✍️</span>
+								<strong class="step-name">Articles</strong>
+							</li>
+						</ol>
+						<aside class="notes">
+							Théorie sur l'exploitation de la veille.
+						</aside>
+					</section>
+					<section>
+						<ol class="steps">
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎯</span>
+								 <strong class="step-name">Le domaine</strong>
+							 </li>
+							 <li class="fragment shrink">
+								 <span class="step-icon">📡</span>
+								 <strong class="step-name">Système d'écoute</strong>
+							 </li>
+							 <li class="fragment shrink">
+								 <span class="step-icon">🎚</span>
+								 <strong class="step-name">Workflow de tri</strong>
+							 </li>	
+							 <li class="fragment shrink">
+								 <span class="step-icon">🗃</span>
+								 <strong class="step-name">Classement</strong>
+							 </li>
+							 <li class="fragment shrink">
+								 <span class="step-icon">⏳</span>
+								 <strong class="step-name">L'épreuve du temps</strong>
+							 </li>
+							 <li class="fragment grow">
+								 <span class="step-icon">💡</span>
+								 <strong class="step-name">Exploitation</strong>
+							 </li>
+						</ol>
+						<aside class="notes">
+							Le domaine défini, les oreilles grandes ouvertes, maintenant il faut utiliser cette matière. Quand et commment ?
+						</aside>
+					</section>
+					<section>
+						<h2>	
+							<span class="step-icon">💡</span><br/>
+							Exploitation planifiée
+						</h2>
+						<aside class="notes">
+							Comment la veille est exploitée, et comment valoriser les informations au quotidien.<br/>
+							- Exploité de manière planifiée
+						</aside>
+					</section>
+					<section>
+						<h3>Expérimentation</h3>
+						<ol class="steps">
+							<li class="fragment fade-up">
+								<h2 style="text-align:center;">	
+								<span class="step-icon">🧨</span>
+								<strong class="step-name">Prototype</strong>
+								</h2>
+							</li>
+							<li class="fragment fade-up">
+								<h2 style="text-align:center;">	
+								<span class="step-icon">🎩</span>
+								<strong class="step-name">Vrais&nbsp;projets</strong>
+								</h2>
+							</li>
+							<li class="fragment fade-up">
+								<h2 style="text-align:center;">	
+								<span class="step-icon">🧰</span>
+								<strong class="step-name">Lessons&nbsp;apprises</strong>
+								</h2>
+							</li>
+						</ol>
+						<aside class="notes">
+							<p>
+								Plusieurs terrains d'expérimentation pour des nouvelles technologies.<br/><br/>
+								Sous forme de prototype pour éprouver la méthode, tester les limites, être sûr que l'on a bien compris les usages.<br/><br/>
+								Ou directement dans de vrais projets. Méthode périlleuse mais vraiment plus formatrice. (expliquer les origines d'Antistatique, méthode : chaque projet une nouvelle technologie, puis en étant honnête avec les clients)<br/><br/>
+								Importance de noter les lessons apprises dans l'expérimentation
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h1>🧰</h1>
+						<ul>
+							<li class="fragment fade-up">Sujet et objectifs de l'expérience</li>
+							<li class="fragment fade-up">Résultat attendu, résultat obtenu</li>
+							<li class="fragment fade-up">Point d'apprentissage</li>
+							<li class="fragment fade-up">Idées/exemples d'application de la méthode</li>
+						</ul>
+						<aside class="notes">
+							<p>Pourquoi ne pas en faire un article de blog ? Résumer les lessons apprises lors de l'expérimentation.</p>
+							<p>Qu'attendiez-vous avant de commencer, est-ce que le résultat est là</p>
+							<p>Qu'avez-vous appris concrètement ?</p>
+							<p>En faisant, d'autres applications de cette technologie/pratique vous sont venus à l'idée ?</p>
+						</aside>
+					</section>
+					<section>
+						<h1>
+							🧑‍🚒
+						</h1>
+						<aside class="notes">
+							exploitée de manière plus spontanée - pour résoudre un problème<br/>
+						</aside>
+					</section>
+					<section>
+						<h1>🕵️‍♀️</h1>
+						<aside class="notes">
+							Se souvenir<br/>
+							Quelle connexion faire avec la connaissance (par quel moyen vous l'aviez trouvé ?, sur quel réseau ?)<br/>
+							Lieux de savoir - à la manière d'une bibliothèque, y penser<br/>
+							Arriver à se référé à son coffre fort de connaissance<br/>
+							
+						</aside>
+					</section>
+					<section>
+						<h1>🚧</h1>
+						<h2>Exercice pratique nº6</h2>
+						<p>Jusqu'à la fin du cours</p>
+						<ul>
+							<li>Création d'un prototype pour expérimenter</li>
+							<li>Rédaction de l'article "lessons apprises"</li>
+						</ul>
+					</section>
+					<section>
+						<table style="font-size:0.4em;margin-top:1em;">
+							<tr>
+								<td width="30%">
+									<h4>
+										Livrable attendu
+									</h4>
+								</td>
+								<td>
+									<h3>Blog traitant de votre domaine de veille</h3>
+									<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
+									<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies ainsi que l'explication du choix du SSG</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										90% – contenu
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le domaine est en relation avec votre Ikigai, ainsi que les taxonomies sont expliqués sur une page <strong>À propos</strong>.
+									</p>
+									<p>
+										✅ Les 6 articles sont en relation avec le domaine (dont 1 sur une expérimentation et 1 avec le système et la liste des sources d'écoute).
+									</p>
+									<p>
+										✅ Le contenu des articles cite la/les sources et explique en quoi ils sont intéressants pour vous et votre domaine et à quel moment cela vous sera utile.
+									</p>																				
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										10% – technique, la forme
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le site est généré avec le SSG de votre choix
+									</p>
+									<p>
+										✅ Le thème est bien choisi (il correspond au domaine)
+									</p>
+									<p>
+										✅ Le site est hébergé sur github et se génére via Github Actions
+									</p>	
+								</td>
+							</tr>							
+						</table>
+						<aside class="notes">
+							On aura l'occasion d'en reparler (je vous recommuniquerais ce tableau)<br/>
+							L'évaluation du cours me permet de voir si l'objectif est atteint. J'insiste sur : <br/>
+							- Je veux être bien sûr que c'est le domaine qui vous intéresse<br/>
+							- Je serai disponible pour en discuter si vous avez de la peine à en trouver un ou le définir<br/>
+							- Je m'intéresse au contenu mais surtout comment vous l'aurez trouvé et ce que vous en avez apprit <br/>
+							- Je veux aussi savoir pourquoi vous avez choisi celui-ci<br/>
+							- Peu de points sur la technique (Vous ne serez pas tous des développeurs, mais vous devez comprendre ce qui est en jeu).
+						</aside>
+					</section>					
+					<section>
+						<h1>🧘‍♀️</h1>
+						<h2>Avoir confiance en votre système</h2>
+						<aside class="notes">
+							Avoir confiance, itérer.
+						</aside>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h1>
+							Deploy 🚀
+						</h1>
+					</section>
+					<!-- <section>
+						
+
+						<svg
+						   version="1.1"
+						   id="svg108"
+						   width="100%"
+						   height="100%"
+						   viewBox="0 0 1443.076 840.29694"
+						   xmlns="http://www.w3.org/2000/svg"
+						   xmlns:svg="http://www.w3.org/2000/svg">
+						  <defs
+							 id="defs112">
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath146">
+							  <path
+								 d="m 487.1826,349.4327 h 106.6973 v 64.19922 H 487.1826 Z"
+								 id="path144" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath160">
+							  <path
+								 d="M 406.0461,246.7115 H 675.0166 V 515.7338 H 406.0461 Z"
+								 id="path158" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath170">
+							  <path
+								 d="m 141.1758,438.3555 h 152 v 61.73438 h -152 z"
+								 id="path168" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath180">
+							  <path
+								 d="m 142.1758,439.3555 h 150 v 59.73438 h -150 z"
+								 id="path178" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath194">
+							  <path
+								 d="m 492.7822,175.4208 h 95.49803 v 52.57812 H 492.7822 Z"
+								 id="path192" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath204">
+							  <path
+								 d="m 493.7822,176.4208 h 93.49803 v 50.57812 H 493.7822 Z"
+								 id="path202" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath218">
+							  <path
+								 d="m 141.1758,206.0664 h 152 v 69.4375 h -152 z"
+								 id="path216" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath228">
+							  <path
+								 d="m 142.1758,207.0664 h 150 v 67.4375 h -150 z"
+								 id="path226" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath242">
+							  <path
+								 d="m 141.1758,160.2539 h 152 v 43.87891 h -152 z"
+								 id="path240" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath252">
+							  <path
+								 d="m 142.1758,161.2539 h 150 v 41.87891 h -150 z"
+								 id="path250" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath266">
+							  <path
+								 d="m 676.1758,438.3555 h 152 v 61.73438 h -152 z"
+								 id="path264" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath276">
+							  <path
+								 d="m 677.1758,439.3555 h 150 v 59.73438 h -150 z"
+								 id="path274" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath290">
+							  <path
+								 d="m 712.1758,392.207 h 152 v 43.87891 h -152 z"
+								 id="path288" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath300">
+							  <path
+								 d="m 713.1758,393.207 h 150 v 41.87891 h -150 z"
+								 id="path298" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath314">
+							  <path
+								 d="m 717.1758,160.2539 h 152 v 43.87891 h -152 z"
+								 id="path312" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath324">
+							  <path
+								 d="m 718.1758,161.2539 h 150 v 41.87891 h -150 z"
+								 id="path322" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath338">
+							  <path
+								 d="m 281.8702,126.1806 h 447.6073 v 39.44907 H 281.8702 Z"
+								 id="path336" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath350">
+							  <path
+								 d="m 172.1758,346.916 h 152 v 43.87891 h -152 z"
+								 id="path348" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath360">
+							  <path
+								 d="m 173.1758,347.916 h 150 v 41.87891 h -150 z"
+								 id="path358" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath374">
+							  <path
+								 d="m 172.1758,392.207 h 152 v 43.87891 h -152 z"
+								 id="path372" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath384">
+							  <path
+								 d="m 173.1758,393.207 h 150 v 41.87891 h -150 z"
+								 id="path382" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath404">
+							  <path
+								 d="m 205.1758,299.3047 h 152 v 43.87891 h -152 z"
+								 id="path402" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath414">
+							  <path
+								 d="m 206.1758,300.3047 h 150 v 41.87891 h -150 z"
+								 id="path412" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath428">
+							  <path
+								 d="m 712.1758,346.0586 h 152 v 43.87891 h -152 z"
+								 id="path426" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath438">
+							  <path
+								 d="m 713.1758,347.0586 h 150 v 41.87891 h -150 z"
+								 id="path436" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath452">
+							  <path
+								 d="m 762.1758,299.3047 h 152 v 43.87891 h -152 z"
+								 id="path450" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath462">
+							  <path
+								 d="m 763.1758,300.3047 h 150 v 41.87891 h -150 z"
+								 id="path460" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath476">
+							  <path
+								 d="m 829.1758,253.0254 h 152 v 43.87891 h -152 z"
+								 id="path474" />
+							</clipPath>
+							<clipPath
+							   clipPathUnits="userSpaceOnUse"
+							   id="clipPath486">
+							  <path
+								 d="m 830.1758,254.0254 h 150 v 41.87891 h -150 z"
+								 id="path484" />
+							</clipPath>
+						  </defs>
+						  <g
+							 id="g116"
+							 transform="matrix(1.3333333,0,0,-1.3333333,0,840.29693)">
+							<g
+							   id="g140">
+							  <g
+								 id="g142"
+								 clip-path="url(#clipPath146)">
+								<g
+								   id="g148"
+								   transform="translate(498.291,367.626)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:36px;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text152"><tspan
+									   x="0 25.542 44.891998 65.033997"
+									   y="0"
+									   id="tspan150">Hugo</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g154">
+							  <g
+								 id="g156"
+								 clip-path="url(#clipPath160)">
+								<path
+								   d="m 566.2039,514.7071 c -1.3202,0.1668 -2.184,-0.4357 -3.0868,-2.1066 -3.6749,-6.8005 -7.6714,-13.4473 -11.4924,-20.169 -1.4143,-2.4882 -3.0118,-3.6987 -6.2989,-3.3789 -5.7346,0.5567 -11.572,0.5086 -17.2907,-0.4797 -2.5857,-0.4458 -4.0506,0.2105 -5.4646,2.4194 -4.331,6.7712 -8.9775,13.3272 -13.3279,20.0856 -1.2196,1.8948 -2.1727,2.1429 -4.1923,1.2097 -13.1424,-6.0709 -26.3352,-12.089 -39.5871,-17.9164 -2.4222,-1.0642 -2.4178,-2.1746 -1.7938,-4.3592 2.1659,-7.586 3.9993,-15.2553 6.1738,-22.8387 0.7058,-2.465 0.4109,-4.0919 -1.6477,-5.7775 -4.6,-3.7696 -8.7394,-8.0877 -12.1807,-12.9106 -1.8289,-2.5637 -3.743,-2.7839 -6.3406,-2.2526 -7.5767,1.5471 -15.1972,2.9143 -22.7345,4.6303 -2.4307,0.554 -3.4713,0.0365 -4.3175,-2.2526 -4.9663,-13.4388 -10.0164,-26.8557 -15.1424,-40.2338 -0.8609,-2.2472 -0.5143,-3.3656 1.7103,-4.5677 6.8005,-3.6749 13.4238,-7.6747 20.1482,-11.4924 2.5069,-1.4229 3.6519,-3.0287 3.2955,-6.3197 -0.6208,-5.7313 -0.3119,-11.5708 0.6465,-17.2908 0.4353,-2.6 -0.3421,-4.0453 -2.5237,-5.4437 -6.7671,-4.3377 -13.3433,-8.9835 -20.1064,-13.3278 -1.9187,-1.2327 -2.0681,-2.2181 -1.1472,-4.2132 6.0663,-13.1444 12.0689,-26.3157 17.8956,-39.5663 1.0701,-2.4329 2.1775,-2.4173 4.3591,-1.7937 7.5854,2.1678 15.2484,4.1083 22.8805,6.1112 1.1342,0.2977 2.2836,0.4735 3.4623,0.7091 0.5666,-0.6658 1.0341,-1.2439 1.5226,-1.7937 4.0527,-4.5579 8.4438,-8.8085 13.3695,-12.3475 2.6638,-1.914 3.1306,-3.8671 2.5446,-6.6953 -1.5698,-7.5713 -2.9392,-15.1745 -4.6511,-22.7135 -0.5482,-2.4146 -0.0521,-3.4878 2.2525,-4.3384 13.4402,-4.9643 26.8557,-10.0152 40.2338,-15.1424 2.2416,-0.8593 3.3636,-0.539 4.5677,1.6895 3.6743,6.8005 7.6621,13.431 11.4924,20.1481 1.407,2.466 2.9617,3.7717 6.2781,3.4206 5.5811,-0.5913 11.3292,-0.6577 16.8527,0.438 3.3726,0.6703 4.8198,-0.7399 6.3823,-3.1286 4.2362,-6.4788 8.6842,-12.8239 12.869,-19.3347 1.2099,-1.8821 2.1532,-2.1526 4.1923,-1.2097 13.1404,6.0743 26.3163,12.0635 39.5663,17.8956 2.3955,1.0525 2.4697,2.1482 1.8354,4.3591 -2.1745,7.5834 -4.0052,15.2541 -6.1737,22.8388 -0.6993,2.4493 -0.4415,4.0851 1.6269,5.7774 4.6039,3.7637 8.7435,8.0763 12.2015,12.8899 1.8106,2.5202 3.6651,2.8383 6.2989,2.2943 7.572,-1.5652 15.1964,-2.919 22.7344,-4.6304 2.4145,-0.5495 3.4858,-0.0749 4.3384,2.2318 4.965,13.4401 10.0172,26.855 15.1424,40.2337 0.8555,2.2312 0.5469,3.3796 -1.6895,4.5886 -6.8004,3.6743 -13.4284,7.6458 -20.1481,11.4716 -2.4855,1.4149 -3.6828,3.0053 -3.3163,6.3197 0.6337,5.7282 0.3058,11.5695 -0.6466,17.2907 -0.4313,2.5903 0.3323,4.0395 2.5237,5.4438 6.7685,4.335 13.3245,8.9788 20.0856,13.3278 1.9008,1.2229 2.1205,2.1975 1.1889,4.2132 -6.0697,13.1431 -12.0682,26.3144 -17.8956,39.5663 -1.0662,2.4241 -2.1756,2.4158 -4.3592,1.7937 -7.7309,-2.2025 -15.5554,-4.1101 -23.2976,-6.278 -2.132,-0.596 -3.5177,-0.2835 -4.964,1.5017 -3.749,4.6293 -8.2073,8.6246 -12.9941,12.0972 -2.6344,1.9116 -3.1388,3.8476 -2.5446,6.6952 1.5785,7.5694 2.9372,15.1763 4.6512,22.7136 0.5501,2.4184 0.0482,3.4882 -2.2526,4.3383 -13.4395,4.9658 -26.8551,10.0166 -40.2338,15.1425 -0.5604,0.2147 -1.0407,0.3618 -1.4809,0.4171 z M 540.5286,442.666 c 33.9317,0 61.4457,-27.5147 61.4456,-61.4457 -6e-4,-33.9316 -27.5146,-61.4456 -61.4456,-61.4456 -33.931,0 -61.4456,27.514 -61.4456,61.4456 0,33.931 27.5146,61.4457 61.4456,61.4457 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path162" />
+							  </g>
+							</g>
+							<g
+							   id="g164">
+							  <g
+								 id="g166"
+								 clip-path="url(#clipPath170)">
+								<path
+								   d="m 142.1758,439.3555 h 150 v 59.73438 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path172" />
+							  </g>
+							</g>
+							<g
+							   id="g174">
+							  <g
+								 id="g176"
+								 clip-path="url(#clipPath180)">
+								<g
+								   id="g182"
+								   transform="translate(180.7456,461.8867)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text186"><tspan
+									   x="0 12.7116 23.1912 33.706799 40.226398 50.363998 60.879601 67.489197"
+									   y="0"
+									   id="tspan184">Content/</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g188">
+							  <g
+								 id="g190"
+								 clip-path="url(#clipPath194)">
+								<path
+								   d="m 493.7822,176.4208 h 93.49803 v 50.57812 H 493.7822 Z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path196" />
+							  </g>
+							</g>
+							<g
+							   id="g198">
+							  <g
+								 id="g200"
+								 clip-path="url(#clipPath204)">
+								<g
+								   id="g206"
+								   transform="translate(512.7383,194.9521)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text210"><tspan
+									   x="0 12.7116 23.1912 33.706799 40.262402 44.694"
+									   y="0"
+									   id="tspan208">Config</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g212">
+							  <g
+								 id="g214"
+								 clip-path="url(#clipPath218)">
+								<path
+								   d="m 142.1758,207.0664 h 150 v 67.4375 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path220" />
+							  </g>
+							</g>
+							<g
+							   id="g222">
+							  <g
+								 id="g224"
+								 clip-path="url(#clipPath228)">
+								<g
+								   id="g230"
+								   transform="translate(185.4766,234.082)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text234"><tspan
+									   x="0 11.223 21.834 31.976999 47.844002 58.041"
+									   y="0"
+									   id="tspan232">Theme/</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g236">
+							  <g
+								 id="g238"
+								 clip-path="url(#clipPath242)">
+								<path
+								   d="m 142.1758,161.2539 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path244" />
+							  </g>
+							</g>
+							<g
+							   id="g246">
+							  <g
+								 id="g248"
+								 clip-path="url(#clipPath252)">
+								<g
+								   id="g254"
+								   transform="translate(191.0859,175.9297)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text258"><tspan
+									   x="0 9.3708 15.9876 25.8804 32.4972 36.917999 46.8288"
+									   y="0"
+									   id="tspan256">static/</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g260">
+							  <g
+								 id="g262"
+								 clip-path="url(#clipPath266)">
+								<path
+								   d="m 677.1758,439.3555 h 150 v 59.73438 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path268" />
+							  </g>
+							</g>
+							<g
+							   id="g270">
+							  <g
+								 id="g272"
+								 clip-path="url(#clipPath276)">
+								<g
+								   id="g278"
+								   transform="translate(723.8353,461.8867)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text282"><tspan
+									   x="0 10.9188 21.441601 32.4324 36.979198 41.400002 51.310799"
+									   y="0"
+									   id="tspan280">public/</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g284">
+							  <g
+								 id="g286"
+								 clip-path="url(#clipPath290)">
+								<path
+								   d="m 713.1758,393.207 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path292" />
+							  </g>
+							</g>
+							<g
+							   id="g294">
+							  <g
+								 id="g296"
+								 clip-path="url(#clipPath300)">
+								<g
+								   id="g302"
+								   transform="translate(743.9982,407.8828)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text306"><tspan
+									   x="0 4.428 14.94 25.938 35.712002 45.306 50.706001 61.307999 67.914001 83.790001"
+									   y="0"
+									   id="tspan304">index.html</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g308">
+							  <g
+								 id="g310"
+								 clip-path="url(#clipPath314)">
+								<path
+								   d="m 718.1758,161.2539 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path316" />
+							  </g>
+							</g>
+							<g
+							   id="g318">
+							  <g
+								 id="g320"
+								 clip-path="url(#clipPath324)">
+								<g
+								   id="g326"
+								   transform="translate(790.4956,175.9297)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text330"><tspan
+									   x="0"
+									   y="0"
+									   id="tspan328">/</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g332">
+							  <g
+								 id="g334"
+								 clip-path="url(#clipPath338)">
+								<g
+								   id="g340"
+								   transform="matrix(1,0,0,-1,283.7944,161.2539)">
+								  <path
+									 d="M 0,0 C 148.8747,40.76437 296.7906,40.76437 443.7478,0"
+									 style="fill:none;stroke:#ffffff;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+									 id="path342" />
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g344">
+							  <g
+								 id="g346"
+								 clip-path="url(#clipPath350)">
+								<path
+								   d="m 173.1758,347.916 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path352" />
+							  </g>
+							</g>
+							<g
+							   id="g354">
+							  <g
+								 id="g356"
+								 clip-path="url(#clipPath360)">
+								<g
+								   id="g362"
+								   transform="translate(190.4828,362.5918)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text366"><tspan
+									   x="0 9.9108 20.3976 30.920401 37.447201 47.591999 58.114799 64.497597 72.428398 79.045197 88.956001 99.874802 110.0736"
+									   y="0"
+									   id="tspan364">content-type/</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g368">
+							  <g
+								 id="g370"
+								 clip-path="url(#clipPath374)">
+								<path
+								   d="m 173.1758,393.207 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path376" />
+							  </g>
+							</g>
+							<g
+							   id="g378">
+							  <g
+								 id="g380"
+								 clip-path="url(#clipPath384)">
+								<g
+								   id="g386"
+								   transform="translate(204.1293,407.8828)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text390"><tspan
+									   x="0"
+									   y="0"
+									   id="tspan388">_</tspan></text>
+								</g>
+								<g
+								   id="g392"
+								   transform="translate(204.1293,407.8828)">
+								  <text
+									 xml:space="preserve"
+									 transform="matrix(1,0,0,-1,10.51807,0)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text396"><tspan
+									   x="0 4.428 14.94 25.938 35.712002 45.306 50.706001 66.582001"
+									   y="0"
+									   id="tspan394">index.md</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g398">
+							  <g
+								 id="g400"
+								 clip-path="url(#clipPath404)">
+								<path
+								   d="m 206.1758,300.3047 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path406" />
+							  </g>
+							</g>
+							<g
+							   id="g408">
+							  <g
+								 id="g410"
+								 clip-path="url(#clipPath414)">
+								<g
+								   id="g416"
+								   transform="translate(216.7201,315.4244)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:15.66px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text420"><tspan
+									   x="0 13.957758 23.217516 32.508595 39.732552 48.491192 57.75095 67.042023 72.856583 81.818802 91.109879 100.40096 105.27592 119.23367"
+									   y="0"
+									   id="tspan418">mon-contenu.md</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g422">
+							  <g
+								 id="g424"
+								 clip-path="url(#clipPath428)">
+								<path
+								   d="m 713.1758,347.0586 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path430" />
+							  </g>
+							</g>
+							<g
+							   id="g432">
+							  <g
+								 id="g434"
+								 clip-path="url(#clipPath438)">
+								<g
+								   id="g440"
+								   transform="translate(730.4828,361.7344)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text444"><tspan
+									   x="0 9.9108 20.3976 30.920401 37.447201 47.591999 58.114799 64.497597 72.428398 79.045197 88.956001 99.874802 110.0736"
+									   y="0"
+									   id="tspan442">content-type/</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g446">
+							  <g
+								 id="g448"
+								 clip-path="url(#clipPath452)">
+								<path
+								   d="m 763.1758,300.3047 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path454" />
+							  </g>
+							</g>
+							<g
+							   id="g456">
+							  <g
+								 id="g458"
+								 clip-path="url(#clipPath462)">
+								<g
+								   id="g464"
+								   transform="translate(778.6503,314.9805)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text468"><tspan
+									   x="0 15.8742 26.3484 36.858601 45.010799 54.926998 65.401199 75.9114 82.425598 92.5578 103.068 113.6322"
+									   y="0"
+									   id="tspan466">mon-contenu/</tspan></text>
+								</g>
+							  </g>
+							</g>
+							<g
+							   id="g470">
+							  <g
+								 id="g472"
+								 clip-path="url(#clipPath476)">
+								<path
+								   d="m 830.1758,254.0254 h 150 v 41.87891 h -150 z"
+								   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+								   id="path478" />
+							  </g>
+							</g>
+							<g
+							   id="g480">
+							  <g
+								 id="g482"
+								 clip-path="url(#clipPath486)">
+								<g
+								   id="g488"
+								   transform="translate(860.7546,268.7012)">
+								  <text
+									 xml:space="preserve"
+									 transform="scale(1,-1)"
+									 style="font-variant:normal;font-weight:normal;font-size:18px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+									 id="text492"><tspan
+									   x="0 4.9158001 15.4296 26.429399 36.2052 45.800999 51.202801 61.806599 68.414398 84.292198"
+									   y="0"
+									   id="tspan490">Index.html</tspan></text>
+								</g>
+							  </g>
+							</g>
+						  </g>
+						</svg>
+
+					</section> -->
+					<section>
+						<h3>
+							Socle technologique
+						</h3>
+						<ul>
+							<li>Hébergement web
+								<ul>
+									<li>OS</li>
+									<li>Webserver</li>
+								</ul>
+							</li>
+							<li>Génération du site HTML
+								<ul>
+									<li>OS</li>
+									<li>Hugo App</li>
+								</ul>
+							</li>							
+							<li>Stockage de la source de contenu
+								<ul>
+								<li>Git</li>
+							</ul>								
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>
+							Github pages
+						</h3>
+						<p>git branch gh-pages</p>
+					</section>
+					<section>
+						<h2>GitHub Actions</h2>
+						<aside class="notes">
+							cet outil nous permet de résodure quoi ?
+						</aside>
+					</section>
+					<section>
+						<h2>Automatiser</h2>
+						<ol class="steps">
+							<li class="fragment fade-up">
+								<span class="step-icon">🙋</span>
+								<strong class="step-name">Une nouvelle version</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🧰</span>
+								<strong class="step-name">Installer les outils</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">📦</span>
+								<strong class="step-name">Récupérer le code</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">🏗️</span>
+								<strong class="step-name">Générer le site</strong>
+							</li>
+							<li class="fragment fade-up">
+								<span class="step-icon">⚓️</span>
+								<strong class="step-name">Publier</strong>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<section>
+							<h2>🚧</h2>
+							<h3>librable attendu<br/>27 janvier 2024 à 23h59</h3>
+							<p class="fragment fade-up">6 articles (4 articles résumant un contenu + 1 article d'expérimentation + 1 article sur votre système de veille)</p>
+							<p class="fragment fade-up">1 page à propos</p>
+							<p class="fragment fade-up">Site statique, auto-déployé sur une Github Pages</p>
+							<p class="fragment fade-up">URL de votre site + URL du repository github à envoyer via Teams</p>
+						</section>
+					</section>
+				</section>
+				
+				<!-- ## Conclusion -->
+				<section>
+				<section>
+						<h2>🧪 Objectif atteint ?</h2>
+					<ul>
+						<li class="fragment fade-up">Importance de la veille</li>
+						<li class="fragment fade-up">Prendre du recule sur votre profession</li>
+						<li class="fragment fade-up">Mécanismes de la gestion des connaissances</li>
+						<li class="fragment fade-up">Trouver <strong>votre système</strong></li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Vous faire prendre conscience de l'importance de la veille pour votre parcours professionnel</li>
+							<li>Recule sur la profession des médias, la transformation digitale et les technologies de l'information. Vous faire prendre conscience des effets du temps qui passe</li>
+							<li>Comprendre les mécanismes de la veille et de la gestion des connaissances personnelles</li>
+							<li>Vous aider à trouver votre système</li>
+						</ul>
+					</aside>
+					</section>
+					<section>
+						<h3>Veille technologique</h3>
+						<ol class="steps" style="margin: 2em 0;">
+						 <li class="">
+							 <span class="step-icon">🎯</span>
+							 <strong class="step-name">Le domaine</strong>
+						 </li>
+						 <li class="">
+							 <span class="step-icon">📡</span>
+							 <strong class="step-name">Système d'écoute</strong>
+						 </li>
+						 <li class="">
+							 <span class="step-icon">🎚</span>
+							 <strong class="step-name">Workflow de tri</strong>
+						 </li>	
+						 <li class="">
+							 <span class="step-icon">🗃</span>
+							 <strong class="step-name">Classement</strong>
+						 </li>
+						 <li class="">
+							 <span class="step-icon">⏳</span>
+							 <strong class="step-name">L'épreuve du temps</strong>
+						 </li>
+						 <li class="">
+							 <span class="step-icon">💡</span>
+							 <strong class="step-name">Exploitation</strong>
+						 </li>
+					</ol>
+					<p>
+						Vos questions maintenant ou plus tard  <a href="https://zufrieden.io">zufrieden.io</a>
+					</p>
+						<aside class="notes">
+							<p style="color:red;">@push Suivez-moi sur twitter @zufrieden :-)</p>
+						</aside>						
+					</section>			
+				</section>
+				
+				<!-- 
+					
+					@todo
+					- Lien de ta présentation
+					- Lien à partager dans les chat ?
+						Lien livre ou outil
+						Adacio
+						Lien vers les articles
+					Liens à parrtager en vrac
+				 -->
+				
+				
+				<!-- ## Bibliographie -->
+				<!-- <section>
+					<ul>
+						<li>
+							<a href="https://cultivatedmanagement.com/personal-knowledge-management-system/">https://cultivatedmanagement.com/personal-knowledge-management-system/</a>
+							
+						</li>
+						<li>
+							<a href="https://www.researchgate.net/publication/264901542_Innovation_management_tools_implementing_technology_watch_as_a_routine_for_adaptation">https://www.researchgate.net/publication/264901542_Innovation_management_tools_implementing_technology_watch_as_a_routine_for_adaptation</a>
+							
+						</li>
+						<li>
+							These are the top 10 job skills of tomorrow – and how long it takes to learn them – 21 Oct 2020 - Kate Whiting
+							<a href="https://www.weforum.org/agenda/2020/10/top-10-work-skills-of-tomorrow-how-long-it-takes-to-learn-them">https://www.weforum.org/agenda/2020/10/top-10-work-skills-of-tomorrow-how-long-it-takes-to-learn-them</a>
+							
+						</li>
+					</ul>
+					
+					
+				</section> -->
+								
+				
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealHighlight, RevealNotes ]
+			});
+			// Reveal.configure({ showNotes: true });
+		</script>
+	</body>
+</html>
